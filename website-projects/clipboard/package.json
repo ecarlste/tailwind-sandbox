@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ecarlste/tailwind-sandbox.git",
+  "author": "Erik S. Carlsten <ecarlste@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwind -i ./input.css -o ./css/style.css",
+    "watch": "tailwind -i ./input.css -o ./css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
