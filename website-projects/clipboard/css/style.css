@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Bai Jamjuree, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -520,9 +520,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 
@@ -532,21 +532,15 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .container {
-    max-width: 1024px;
+    max-width: 976px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1440px;
   }
 }
 
@@ -1696,6 +1690,11 @@ video {
   border-style: none;
 }
 
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1870,6 +1869,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -2270,14 +2274,14 @@ video {
   content: var(--tw-content);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 480px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 480px;
     }
   }
 
@@ -2287,21 +2291,15 @@ video {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 976px) {
     .sm\:container {
-      max-width: 1024px;
+      max-width: 976px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     .sm\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .sm\:container {
-      max-width: 1536px;
+      max-width: 1440px;
     }
   }
 }
@@ -2328,14 +2326,14 @@ video {
   text-align: center;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  @media (min-width: 1024px) {
+  @media (min-width: 976px) {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
