@@ -2599,6 +2599,16 @@ body {
     position: absolute;
   }
 
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .md\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2613,6 +2623,14 @@ body {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
   }
 
   .md\:flex-row {
@@ -2641,6 +2659,11 @@ body {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .md\:pl-16 {
