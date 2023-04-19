@@ -4,10 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Poppins:wght@400;500;700&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <title></title>
+    <title>Shortly</title>
   </head>
   <body>
-    <h1 class="text-xl">Shortly</h1>
+    <!-- Nav Container -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container for All Items -->
+      <div class="flex items-center justify-between">
+        <!-- Flex Container for Logo/Menu -->
+        <div class="flex items-center space-x-20">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="" />
+          <!-- Left Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Resources</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Buttons Menu -->
+        <div
+          class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex"
+        >
+          <div class="hover:text-veryDarkViolet">Login</div>
+          <a
+            href="#"
+            class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
+            >Sign Up</a
+          >
+        </div>
+
+        <!-- @todo Hamburger Menu -->
+      </div>
+
+      <!-- @todo Mobile Menu -->
+    </nav>
   </body>
 </html>
