@@ -697,34 +697,6 @@ video {
   -webkit-line-clamp: 5;
 }
 
-.line-clamp-\[7\] {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-}
-
-.line-clamp-\[10\] {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 10;
-}
-
-.line-clamp-\[15\] {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 15;
-}
-
-.line-clamp-\[18\] {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 18;
-}
-
 .line-clamp-\[21\] {
   overflow: hidden;
   display: -webkit-box;
