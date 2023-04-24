@@ -1,9 +1,8 @@
 import React from 'react';
 import SectionContainer from './section/SectionContainer';
-
-import styles from './SuperchargeSection.module.css';
 import SectionContent from './section/SectionContent';
 import LargeHeader from './headers/LargeHeader';
+import MediumHeader from './headers/MediumHeader';
 
 function SuperchargeSection() {
   return (
@@ -23,7 +22,7 @@ function SuperchargeSection() {
               alt=""
               className="mb-6"
             />
-            <h5 className={styles['header-md']}>Create Blocklists</h5>
+            <MediumHeader>Create Blocklists</MediumHeader>
             <p className="max-w-md text-grayishBlue">
               Easily search your snippets by content, category, web address,
               application, and more.
@@ -37,7 +36,7 @@ function SuperchargeSection() {
               alt=""
               className="mb-6"
             />
-            <h5 className={styles['header-md']}>Plain Text Snippets</h5>
+            <MediumHeader>Plain Text Snippets</MediumHeader>
             <p className="max-w-md text-grayishBlue">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
@@ -50,7 +49,7 @@ function SuperchargeSection() {
               alt=""
               className="mb-6"
             />
-            <h5 className={styles['header-md']}>Sneak Preview</h5>
+            <MediumHeader>Sneak Preview</MediumHeader>
             <p className="max-w-md text-grayishBlue">
               Quick preview of all snippets on your Clipboard for easy access.
             </p>

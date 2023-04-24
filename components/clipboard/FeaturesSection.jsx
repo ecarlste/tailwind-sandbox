@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './FeaturesSection.module.css';
 import SectionContainer from './section/SectionContainer';
+import MediumHeader from './headers/MediumHeader';
 
 function FeaturesSection() {
   return (
@@ -21,7 +21,7 @@ function FeaturesSection() {
           <div className="flex flex-col items-center mt-16 mb-24 space-y-12 text-xl md:w-2/5 md:my-auto md:text-left md:pl-16">
             {/* <!-- Item 1 --> */}
             <div>
-              <h5 className={styles['header-md']}>Quick Search</h5>
+              <MediumHeader>Quick Search</MediumHeader>
               <p className="max-w-md text-grayishBlue">
                 Easily search your snippets by content, category, web address,
                 application, and more.
@@ -30,7 +30,7 @@ function FeaturesSection() {
 
             {/* <!-- Item 2 --> */}
             <div>
-              <h5 className={styles['header-md']}>iCloud Sync</h5>
+              <MediumHeader>iCloud Sync</MediumHeader>
               <p className="max-w-md text-grayishBlue">
                 Instantly saves and syncs snippets across all your devices.
               </p>
@@ -38,7 +38,7 @@ function FeaturesSection() {
 
             {/* <!-- Item 1 --> */}
             <div>
-              <h5 className={styles['header-md']}>Complete History</h5>
+              <MediumHeader>Complete History</MediumHeader>
               <p className="max-w-md text-grayishBlue">
                 Retrieve any snippets from the first moment you started using
                 the app.
