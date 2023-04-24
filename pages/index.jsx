@@ -1,17 +1,14 @@
 import Link from 'next/link';
+import GalleryItem from '../components/home-page/GalleryItem';
 
 export default function HomePage() {
   return (
     <div className="container flex flex-wrap mx-auto justify-center p-6 space-y-6 md:px-0 md:space-y-0">
-      <div className="w-full md:p-6 lg:w-1/3 md:w-1/2">
-        <Link href="website-projects/clipboard">
-          <img
-            src="images/clipboard-website-screenshot-desktop.png"
-            alt="Clipboard Website"
-            className="border-2 shadow"
-          />
-        </Link>
-      </div>
+      <GalleryItem
+        linkUrl="website-projects/clipboard"
+        image="images/clipboard-website-screenshot-desktop.png"
+        imageAlt="Clipboard Website"
+      />
     </div>
   );
 }
