@@ -1,0 +1,8 @@
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
