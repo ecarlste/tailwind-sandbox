@@ -1,11 +1,12 @@
 import React from 'react';
 
 import styles from './FeaturesSection.module.css';
+import SectionContainer from './section/SectionContainer';
 
 function FeaturesSection() {
   return (
     <section id="features">
-      <div className={styles['section-container'] + ' my-20 md:my-40'}>
+      <SectionContainer className="my-20 md:my-40">
         <div className="relative flex flex-col md:flex-row md:space-x-32">
           {/* <!-- Image --> */}
           <div className="md:w-3/5 md:my-auto">
@@ -45,7 +46,7 @@ function FeaturesSection() {
             </div>
           </div>
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 }

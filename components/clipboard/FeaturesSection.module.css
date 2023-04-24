@@ -1,7 +1,3 @@
 .header-md {
   @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
 }
-
-.section-container {
-  @apply max-w-6xl mx-auto text-center px-10;
-}

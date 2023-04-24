@@ -1,16 +1,19 @@
 import React from 'react';
+import SectionContainer from './section/SectionContainer';
+import SectionContent from './section/SectionContent';
 
 import styles from './CallToActionSection.module.css';
+import LargeHeader from './headers/LargeHeader';
 
 function CallToActionSection() {
   return (
     <section id="bottom">
-      <div className={styles['section-container'] + ' my-20'}>
-        <h3 className={styles['header-lg']}>Clipboard for iOS and MacOS</h3>
-        <p className={styles['section-content'] + ' mb-10'}>
+      <SectionContainer className=" my-20">
+        <LargeHeader>Clipboard for iOS and MacOS</LargeHeader>
+        <SectionContent className="mb-10">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you're ready to start adding to your clipboard.
-        </p>
+        </SectionContent>
 
         {/* <!-- Button Container --> */}
         <div className={styles['button-container']}>
@@ -28,7 +31,7 @@ function CallToActionSection() {
             Download for Mac
           </a>
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 }

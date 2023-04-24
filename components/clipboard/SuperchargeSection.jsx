@@ -1,15 +1,18 @@
 import React from 'react';
+import SectionContainer from './section/SectionContainer';
 
 import styles from './SuperchargeSection.module.css';
+import SectionContent from './section/SectionContent';
+import LargeHeader from './headers/LargeHeader';
 
 function SuperchargeSection() {
   return (
     <section id="supercharge">
-      <div className={styles['section-container'] + ' my-20'}>
-        <h3 className={styles['header-lg']}>Supercharge your workflow</h3>
-        <p className={styles['section-content'] + ' mb-16'}>
+      <SectionContainer className="my-20">
+        <LargeHeader>Supercharge your workflow</LargeHeader>
+        <SectionContent className="mb-16">
           We've got the tools to boost your productivity.
-        </p>
+        </SectionContent>
 
         {/* <!-- Items Container --> */}
         <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
@@ -53,7 +56,7 @@ function SuperchargeSection() {
             </p>
           </div>
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 }

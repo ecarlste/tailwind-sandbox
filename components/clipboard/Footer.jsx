@@ -1,11 +1,12 @@
 import React from 'react';
+import SectionContainer from './section/SectionContainer';
 
 import styles from './Footer.module.css';
 
 function Footer() {
   return (
     <footer className="bg-gray-50">
-      <div className={styles['section-container']}>
+      <SectionContainer>
         <div className="flex flex-col items-center justify-between md:flex-row">
           {/* <!-- Image --> */}
           <img src="/images/clipboard/logo.svg" alt="" className="scale-50" />
@@ -78,7 +79,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </SectionContainer>
     </footer>
   );
 }

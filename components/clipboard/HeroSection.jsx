@@ -1,28 +1,25 @@
 import React from 'react';
 
 import styles from './HeroSection.module.css';
+import SectionContainer from './section/SectionContainer';
+import SectionContent from './section/SectionContent';
+import LargeHeader from './headers/LargeHeader';
 
 function HeroSection() {
   return (
     <section id="hero">
-      <div className={styles['section-container'] + ' mb-40 pt-16'}>
+      <SectionContainer className="mb-40 pt-16">
         <img
           src="/images/clipboard/logo.svg"
           alt=""
           className="mx-auto my-16"
         />
-        <h3 className={styles['header-lg']}>
-          A history of everything you copy
-        </h3>
+        <LargeHeader>A history of everything you copy</LargeHeader>
 
-        <p
-          className={
-            styles['section-content'] + ' mb-10 text-2xl text-grayishBlue'
-          }
-        >
+        <SectionContent className="mb-10 text-2xl text-grayishBlue">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
-        </p>
+        </SectionContent>
 
         {/* <!-- Button Container --> */}
         <div className={styles['button-container']}>
@@ -39,7 +36,7 @@ function HeroSection() {
             Download for Mac
           </a>
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 }
