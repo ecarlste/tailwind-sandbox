@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './HeroSection.module.css';
 import SectionContainer from './section/SectionContainer';
 import SectionContent from './section/SectionContent';
 import LargeHeader from './headers/LargeHeader';
+import ButtonContainer from './buttons/ButtonContainer';
 
 function HeroSection() {
   return (
@@ -21,8 +21,7 @@ function HeroSection() {
           Instantly access your clipboard on all your devices.
         </SectionContent>
 
-        {/* <!-- Button Container --> */}
-        <div className={styles['button-container']}>
+        <ButtonContainer>
           <a
             href="#"
             className="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
@@ -35,7 +34,7 @@ function HeroSection() {
           >
             Download for Mac
           </a>
-        </div>
+        </ButtonContainer>
       </SectionContainer>
     </section>
   );

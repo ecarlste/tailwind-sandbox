@@ -2,8 +2,8 @@ import React from 'react';
 import SectionContainer from './section/SectionContainer';
 import SectionContent from './section/SectionContent';
 
-import styles from './CallToActionSection.module.css';
 import LargeHeader from './headers/LargeHeader';
+import ButtonContainer from './buttons/ButtonContainer';
 
 function CallToActionSection() {
   return (
@@ -15,8 +15,7 @@ function CallToActionSection() {
           with iCloud and you're ready to start adding to your clipboard.
         </SectionContent>
 
-        {/* <!-- Button Container --> */}
-        <div className={styles['button-container']}>
+        <ButtonContainer>
           <a
             href="#"
             className="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
@@ -30,7 +29,7 @@ function CallToActionSection() {
           >
             Download for Mac
           </a>
-        </div>
+        </ButtonContainer>
       </SectionContainer>
     </section>
   );
