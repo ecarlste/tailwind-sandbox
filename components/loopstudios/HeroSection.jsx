@@ -2,6 +2,14 @@ import React from 'react';
 
 import styles from './HeroSection.module.css';
 
+import { Alata } from 'next/font/google';
+
+const alata = Alata({
+  subsets: ['latin'],
+  variable: '--font-alata',
+  weight: '400',
+});
+
 function HeroSection() {
   return (
     <section id={styles.hero}>
@@ -11,7 +19,9 @@ function HeroSection() {
           {/* <!-- Logo --> */}
           <img src="/images/loopstudios/logo.svg" alt="" />
           {/* <!-- Menu --> */}
-          <div className="hidden h-10 font-alata md:flex md:space-x-8">
+          <div
+            className={`hidden h-10 ${alata.variable} font-alata md:flex md:space-x-8`}
+          >
             <div className="group">
               <a href="#">About</a>
               <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>

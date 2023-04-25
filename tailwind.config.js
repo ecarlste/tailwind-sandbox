@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
         josefinSans: ['Josefin Sans'],
-        alata: ['Alata'],
+        alata: ['var(--font-alata)'],
       },
     },
   },
