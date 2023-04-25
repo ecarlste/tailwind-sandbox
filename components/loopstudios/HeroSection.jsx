@@ -1,14 +1,7 @@
 import React from 'react';
 
 import styles from './HeroSection.module.css';
-
-import { Alata } from 'next/font/google';
-
-const alata = Alata({
-  subsets: ['latin'],
-  variable: '--font-alata',
-  weight: '400',
-});
+import DesktopMenu from './DesktopMenu';
 
 function HeroSection() {
   function hamburgerClickHandler() {
@@ -27,31 +20,7 @@ function HeroSection() {
         <nav className="flex items-center justify-between font-bold text-white">
           {/* <!-- Logo --> */}
           <img src="/images/loopstudios/logo.svg" alt="" />
-          {/* <!-- Menu --> */}
-          <div
-            className={`hidden h-10 ${alata.variable} font-alata md:flex md:space-x-8`}
-          >
-            <div className="group">
-              <a href="#">About</a>
-              <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div>
-            <div className="group">
-              <a href="#">Careers</a>
-              <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div>
-            <div className="group">
-              <a href="#">Events</a>
-              <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div>
-            <div className="group">
-              <a href="#">Products</a>
-              <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div>
-            <div className="group">
-              <a href="#">Support</a>
-              <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div>
-          </div>
+          <DesktopMenu />
 
           {/* <!-- Hamburger Button --> */}
           <div className="md:hidden">
