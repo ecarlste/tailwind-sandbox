@@ -10,7 +10,7 @@ function FeaturesSection() {
 
         {/* <!-- Text Container --> */}
         <div className="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
-          <h2 className="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
+          <h2 className="max-w-lg mt-10 mb-6 text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
             The leader in interactive VR
           </h2>
 
