@@ -11,6 +11,15 @@ const alata = Alata({
 });
 
 function HeroSection() {
+  function hamburgerClickHandler() {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.classList.toggle(styles.open);
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+
   return (
     <section id={styles.hero}>
       <div className="container max-w-6xl mx-auto px-6 py-12">
@@ -49,11 +58,12 @@ function HeroSection() {
             <button
               id="menu-btn"
               type="button"
-              className="z-40 block hamburger md:hidden focus:outline-none"
+              className={`z-40 block ${styles.hamburger} md:hidden focus:outline-none`}
+              onClick={hamburgerClickHandler}
             >
-              <span className="hamburger-top"></span>
-              <span className="hamburger-middle"></span>
-              <span className="hamburger-bottom"></span>
+              <span className={styles['hamburger-top']}></span>
+              <span className={styles['hamburger-middle']}></span>
+              <span className={styles['hamburger-bottom']}></span>
             </button>
           </div>
         </nav>
