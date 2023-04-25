@@ -9,6 +9,12 @@ export default function HomePage() {
         image="images/clipboard-website-screenshot-desktop.png"
         imageAlt="Clipboard Website"
       />
+
+      <GalleryItem
+        linkUrl="website-projects/loopstudios"
+        image="images/loopstudios-website-screenshot-desktop.png"
+        imageAlt="Loopstudios Website"
+      />
     </div>
   );
 }
