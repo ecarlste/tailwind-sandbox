@@ -3,14 +3,14 @@ import React from 'react';
 function ShortlySitePage() {
   return (
     <>
-      {/* < !--Nav Container-- > */}
+      {/* Nav Container */}
       <nav className="relative container mx-auto p-6">
         {/* Flex Container for All Items */}
         <div className="flex items-center justify-between">
           {/* Flex Container for Logo/Menu */}
           <div className="flex items-center space-x-20">
             {/* Logo */}
-            <img src="images/logo.svg" alt="" />
+            <img src="/images/shortly/logo.svg" alt="" />
             {/* Left Menu */}
             <div className="hidden space-x-8 font-bold lg:flex">
               <a
@@ -112,7 +112,7 @@ function ShortlySitePage() {
 
           {/* Image */}
           <div className="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-            <img src="images/illustration-working.svg" alt="" />
+            <img src="/images/shortly/illustration-working.svg" alt="" />
           </div>
         </div>
       </section>
@@ -214,7 +214,7 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <img src="images/icon-brand-recognition.svg" alt="" />
+                <img src="/images/shortly/icon-brand-recognition.svg" alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -233,7 +233,7 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <img src="images/icon-detailed-records.svg" alt="" />
+                <img src="/images/shortly/icon-detailed-records.svg" alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -252,7 +252,7 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <img src="images/icon-fully-customizable.svg" alt="" />
+                <img src="/images/shortly/icon-fully-customizable.svg" alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -281,7 +281,7 @@ function ShortlySitePage() {
       <footer className="py-16 bg-veryDarkViolet">
         <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
           {/* Logo */}
-          <img src="images/logo.svg" alt="" />
+          <img src="/images/shortly/logo.svg" alt="" />
 
           {/* Menus Container */}
           <div className="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
@@ -376,16 +376,32 @@ function ShortlySitePage() {
           {/* Social Container */}
           <div className="flex space-x-6">
             <a href="#">
-              <img src="images/icon-facebook.svg" alt="" className="ficon" />
+              <img
+                src="/images/shortly/icon-facebook.svg"
+                alt=""
+                className="ficon"
+              />
             </a>
             <a href="#">
-              <img src="images/icon-twitter.svg" alt="" className="ficon" />
+              <img
+                src="/images/shortly/icon-twitter.svg"
+                alt=""
+                className="ficon"
+              />
             </a>
             <a href="#">
-              <img src="images/icon-pinterest.svg" alt="" className="ficon" />
+              <img
+                src="/images/shortly/icon-pinterest.svg"
+                alt=""
+                className="ficon"
+              />
             </a>
             <a href="#">
-              <img src="images/icon-instagram.svg" alt="" className="ficon" />
+              <img
+                src="/images/shortly/icon-instagram.svg"
+                alt=""
+                className="ficon"
+              />
             </a>
           </div>
         </div>
