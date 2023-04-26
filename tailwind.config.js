@@ -13,14 +13,20 @@ module.exports = {
     },
     extend: {
       colors: {
-        strongCyan: 'hsl(171, 66%, 44%)',
-        lightBlue: 'hsl(233, 100%, 69%)',
+        cyan: 'hsl(180, 66%, 49%)',
+        cyanLight: 'hsl(180, 66%, 69%)',
         darkGrayishBlue: 'hsl(210, 10%, 33%)',
+        darkViolet: 'hsl(257, 27%, 26%)',
         grayishBlue: 'hsl(201, 11%, 66%)',
+        grayishViolet: 'hsl(257, 7%, 63%)',
+        lightBlue: 'hsl(233, 100%, 69%)',
+        red: 'hsl(0, 87%, 67%)',
+        strongCyan: 'hsl(171, 66%, 44%)',
+        veryDarkBlue: 'hsl(255, 11%, 22%)',
+        veryDarkViolet: 'hsl(260, 8%, 14%) ',
       },
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
-        josefinSans: ['Josefin Sans'],
         alata: ['var(--font-alata)'],
       },
     },

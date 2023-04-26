@@ -1,92 +1,23 @@
 import React from 'react';
+import { Poppins } from 'next/font/google';
+
+import styles from './index.module.css';
+import NavBar from '../../../components/shortly/nav/NavBar';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+});
 
 function ShortlySitePage() {
   return (
     <>
-      {/* Nav Container */}
-      <nav className="relative container mx-auto p-6">
-        {/* Flex Container for All Items */}
-        <div className="flex items-center justify-between">
-          {/* Flex Container for Logo/Menu */}
-          <div className="flex items-center space-x-20">
-            {/* Logo */}
-            <img src="/images/shortly/logo.svg" alt="" />
-            {/* Left Menu */}
-            <div className="hidden space-x-8 font-bold lg:flex">
-              <a
-                href="#"
-                className="text-grayishViolet hover:text-veryDarkViolet"
-              >
-                Features
-              </a>
-              <a
-                href="#"
-                className="text-grayishViolet hover:text-veryDarkViolet"
-              >
-                Pricing
-              </a>
-              <a
-                href="#"
-                className="text-grayishViolet hover:text-veryDarkViolet"
-              >
-                Resources
-              </a>
-            </div>
-          </div>
-
-          {/* Right Buttons Menu */}
-          <div className="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
-            <div className="hover:text-veryDarkViolet">Login</div>
-            <a
-              href="#"
-              className="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
-            >
-              Sign Up
-            </a>
-          </div>
-
-          {/* Hamburger Button */}
-          <button
-            id="menu-btn"
-            type="button"
-            className="block hamburger lg:hidden focus:outline-none"
-          >
-            <span className="hamburger-top"></span>
-            <span className="hamburger-middle"></span>
-            <span className="hamburger-bottom"></span>
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        <div
-          id="menu"
-          className="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
-        >
-          <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-            <a href="#" className="w-full text-center">
-              Features
-            </a>
-            <a href="#" className="w-full text-center">
-              Pricing
-            </a>
-            <a href="#" className="w-full text-center">
-              Resources
-            </a>
-            <a
-              href="#"
-              className="w-full pt-6 border-t border-gray-400 text-center"
-            >
-              Login
-            </a>
-            <a
-              href="#"
-              className="w-full py-3 text-center rounded-full bg-cyan"
-            >
-              Sign Up
-            </a>
-          </div>
-        </div>
-      </nav>
+      <style jsx global>{`
+        html {
+          font-family: ${poppins.style.fontFamily};
+        }
+      `}</style>
+      <NavBar />
 
       {/* Hero Section */}
       <section id="hero">
@@ -111,7 +42,7 @@ function ShortlySitePage() {
           </div>
 
           {/* Image */}
-          <div className="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+          <div className="mb-24 mx-auto md:w-[32rem] lg:mb-0 lg:w-1/2">
             <img src="/images/shortly/illustration-working.svg" alt="" />
           </div>
         </div>
@@ -267,7 +198,7 @@ function ShortlySitePage() {
       </section>
 
       {/* CTA Section */}
-      <section id="cta" className="py-24 bg-darkViolet">
+      <section id={styles.cta} className="py-24 bg-darkViolet">
         <div className="flex flex-col p-2 space-y-6">
           <h5 className="mx-auto space-y-10 text-4xl font-bold text-center text-white">
             Boost your links today
