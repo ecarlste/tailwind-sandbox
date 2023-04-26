@@ -16,7 +16,7 @@ function DesktopMenu() {
       className={`hidden h-10 ${alata.variable} font-alata md:flex md:space-x-8`}
     >
       {menuItemNames.map((name) => (
-        <div className="group">
+        <div key={name} className="group">
           <a href="#">{name}</a>
           <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
         </div>
