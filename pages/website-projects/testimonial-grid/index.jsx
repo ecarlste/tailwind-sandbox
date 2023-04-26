@@ -1,11 +1,23 @@
 import React from 'react';
 
 import { Barlow_Semi_Condensed } from 'next/font/google';
+import TestimonialCard from '../../../components/testimonial-grid/TestimonialCard';
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
   weight: ['400', '600'],
 });
+
+const data = [
+  {
+    image: '/images/testimonial-grid/image-daniel.jpg',
+    name: 'Daniel Clifford',
+    headline:
+      "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.",
+    fullText:
+      "I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup.",
+  },
+];
 
 function TestimonialGridSitePage() {
   return (
@@ -19,45 +31,7 @@ function TestimonialGridSitePage() {
       <div class="container mx-auto max-w-7xl p-2 md:p-10">
         {/* Grid Container */}
         <div class="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
-          {/* Box 1 */}
-          <div class="relative p-10 rounded-xl bg-purple-700 md:col-span-2">
-            {/* Quotes Image */}
-            <img
-              src="images/bg-pattern-quotation.svg"
-              alt=""
-              class="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150"
-            />
-            {/* Box Header */}
-            <div class="flex z-10 space-x-4">
-              <img
-                src="images/image-daniel.jpg"
-                alt=""
-                class="w-10 h-10 rounded-full ring-2 ring-purple-300"
-              />
-              <div class="text-sm">
-                <h4 class="opacity-90">Daniel Clifford</h4>
-                <p class="opacity-50">Verified Graduate</p>
-              </div>
-            </div>
-
-            {/* Large Text */}
-            <p class="relative z-10 mt-6 text-xl">
-              I received a job offer mid-course, and the subjects I learned were
-              current, if not more so, in the company I joined. I honestly feel
-              I got every penny's worth.
-            </p>
-
-            {/* Small Text */}
-            <p class="mt-6 opacity-50 line-clamp-5">
-              "I was an EMT for many years before I joined the bootcamp. I've
-              been looking to make a transition and have heard some people who
-              had an amazing experience here. I signed up for the free intro
-              course and found it incredibly fun! I enrolled shortly thereafter.
-              The next 12 weeks was the best - and most grueling - time of my
-              life. Since completing the course, I've successfully switched
-              careers, working as a Software Engineer at a VR startup."
-            </p>
-          </div>
+          <TestimonialCard data={data[0]} showQuotes />
 
           {/* Box 2 */}
           <div class="p-10 rounded-xl bg-gray-600">
