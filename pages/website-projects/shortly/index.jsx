@@ -1,8 +1,9 @@
 import React from 'react';
 import { Poppins } from 'next/font/google';
 
-import styles from './index.module.css';
 import NavBar from '../../../components/shortly/nav/NavBar';
+import Footer from '../../../components/shortly/footer/Footer';
+import CallToActionSection from '../../../components/shortly/CallToActionSection';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -197,146 +198,8 @@ function ShortlySitePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id={styles.cta} className="py-24 bg-darkViolet">
-        <div className="flex flex-col p-2 space-y-6">
-          <h5 className="mx-auto space-y-10 text-4xl font-bold text-center text-white">
-            Boost your links today
-          </h5>
-          <button className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-base md:py-3 focus:outline-none">
-            Get Started
-          </button>
-        </div>
-      </section>
-
-      <footer className="py-16 bg-veryDarkViolet">
-        <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
-          {/* Logo */}
-          <img src="/images/shortly/logo.svg" alt="" />
-
-          {/* Menus Container */}
-          <div className="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
-            {/* Menu 1 */}
-            <div className="flex flex-col items-center w-full md:items-start">
-              <div className="mb-5 font-bold text-white capitalize">
-                Features
-              </div>
-              <div className="flex flex-col items-center space-y-3 md:items-start">
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Link shortening
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Branded links
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Analytics
-                </a>
-              </div>
-            </div>
-
-            {/* Menu 2 */}
-            <div className="flex flex-col items-center w-full md:items-start">
-              <div className="mb-5 font-bold text-white capitalize">
-                Resources
-              </div>
-              <div className="flex flex-col items-center space-y-3 md:items-start">
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Blog
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Developers
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Support
-                </a>
-              </div>
-            </div>
-
-            {/* Menu 3 */}
-            <div className="flex flex-col items-center w-full md:items-start">
-              <div className="mb-5 font-bold text-white capitalize">
-                Company
-              </div>
-              <div className="flex flex-col items-center space-y-3 md:items-start">
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Our Team
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Careers
-                </a>
-                <a
-                  href="#"
-                  className="capitalize text-grayishViolet hover:text-cyan"
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Social Container */}
-          <div className="flex space-x-6">
-            <a href="#">
-              <img
-                src="/images/shortly/icon-facebook.svg"
-                alt=""
-                className="ficon"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/images/shortly/icon-twitter.svg"
-                alt=""
-                className="ficon"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/images/shortly/icon-pinterest.svg"
-                alt=""
-                className="ficon"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/images/shortly/icon-instagram.svg"
-                alt=""
-                className="ficon"
-              />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <CallToActionSection />
+      <Footer />
     </>
   );
 }
