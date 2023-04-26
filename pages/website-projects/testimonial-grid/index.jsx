@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Barlow_Semi_Condensed } from 'next/font/google';
 
-const barlow = Barlow_Semi_Condensed({});
+const barlow = Barlow_Semi_Condensed({
+  weight: ['400', '600'],
+});
 
 function TestimonialGridSitePage() {
   return (
