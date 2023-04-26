@@ -1,11 +1,13 @@
 import React from 'react';
 
 function TestimonialCard(props) {
-  const { data, showQuotes } = props;
+  const { cols, data, showQuotes, bgStyle = 'bg-purple-700' } = props;
+
+  const colSpanStyle = cols > 1 ? ` md:col-span-${cols}` : '';
 
   return (
     <>
-      <div className="relative p-10 rounded-xl bg-purple-700 md:col-span-2">
+      <div className={`relative p-10 rounded-xl ${bgStyle}${colSpanStyle}`}>
         {showQuotes && (
           <img
             src="/images/testimonial-grid/bg-pattern-quotation.svg"

@@ -17,6 +17,13 @@ const data = [
     fullText:
       "I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup.",
   },
+  {
+    image: '/images/testimonial-grid/image-jonathan.jpg',
+    name: 'Jonathan Walters',
+    headline: 'The team was very supportive and kept me motivated',
+    fullText:
+      "I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself.",
+  },
 ];
 
 function TestimonialGridSitePage() {
@@ -31,35 +38,8 @@ function TestimonialGridSitePage() {
       <div class="container mx-auto max-w-7xl p-2 md:p-10">
         {/* Grid Container */}
         <div class="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
-          <TestimonialCard data={data[0]} showQuotes />
-
-          {/* Box 2 */}
-          <div class="p-10 rounded-xl bg-gray-600">
-            {/* Box Header */}
-            <div class="flex space-x-4">
-              <img
-                src="images/image-jonathan.jpg"
-                alt=""
-                class="w-10 h-10 rounded-full ring-2 ring-purple-300"
-              />
-              <div class="text-sm">
-                <h4 class="opacity-90">Jonathan Walters</h4>
-                <p class="opacity-50">Verified Graduate</p>
-              </div>
-            </div>
-
-            {/* Large Text */}
-            <p class="mt-6 text-xl">
-              The team was very supportive and kept me motivated
-            </p>
-
-            {/* Small Text */}
-            <p class="mt-6 opacity-50 line-clamp-5">
-              "I started as a total newbie with virtually no coding skills. I
-              now work as a mobile engineer for a big company. This was one of
-              the best investments I've made in myself."
-            </p>
-          </div>
+          <TestimonialCard data={data[0]} cols={2} showQuotes />
+          <TestimonialCard data={data[1]} bgStyle="bg-gray-600" />
 
           {/* Box 3 */}
           <div class="hidden p-10 rounded-xl bg-white text-gray-900 md:block md:row-span-2">
