@@ -35,6 +35,12 @@ export default function HomePage() {
           image="images/shortly-website-screenshot-desktop.png"
           imageAlt="Shortly Website"
         />
+
+        <GalleryItem
+          linkUrl="website-projects/testimonial-grid"
+          image="images/testimonial-grid-website-screenshot-desktop.png"
+          imageAlt="Testimonial Grid Website"
+        />
       </div>
     </>
   );
