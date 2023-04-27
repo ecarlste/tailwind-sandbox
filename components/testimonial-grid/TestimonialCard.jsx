@@ -1,13 +1,16 @@
 import React from 'react';
 
-function TestimonialCard(props) {
-  const { cols, data, showQuotes, bgStyle = 'bg-purple-700' } = props;
+import styles from './TestimonialCard.module.css';
 
-  const colSpanStyle = cols > 1 ? ` md:col-span-${cols}` : '';
+function TestimonialCard(props) {
+  const { data, showQuotes, lineClamp = 5 } = props;
+
+  const containerStyles = `p-10 rounded-xl ${props.className}`.trimEnd();
+  const lineClampStyle = styles[`line-clamp-${lineClamp}`];
 
   return (
     <>
-      <div className={`relative p-10 rounded-xl ${bgStyle}${colSpanStyle}`}>
+      <div className={containerStyles}>
         {showQuotes && (
           <img
             src="/images/testimonial-grid/bg-pattern-quotation.svg"
@@ -30,7 +33,7 @@ function TestimonialCard(props) {
 
         <p className="relative z-10 mt-6 text-xl">{data.headline}</p>
 
-        <p className="mt-6 opacity-50 line-clamp-5">{data.fullText}</p>
+        <p className={`mt-6 opacity-50 ${lineClampStyle}`}>{data.fullText}</p>
       </div>
     </>
   );
