@@ -22,7 +22,7 @@ function FeaturesSection() {
             {/* <!-- Item 1 --> */}
             <div>
               <MediumHeader>Quick Search</MediumHeader>
-              <p className="max-w-md text-grayishBlue">
+              <p className="max-w-md text-grayish-blue">
                 Easily search your snippets by content, category, web address,
                 application, and more.
               </p>
@@ -31,7 +31,7 @@ function FeaturesSection() {
             {/* <!-- Item 2 --> */}
             <div>
               <MediumHeader>iCloud Sync</MediumHeader>
-              <p className="max-w-md text-grayishBlue">
+              <p className="max-w-md text-grayish-blue">
                 Instantly saves and syncs snippets across all your devices.
               </p>
             </div>
@@ -39,7 +39,7 @@ function FeaturesSection() {
             {/* <!-- Item 1 --> */}
             <div>
               <MediumHeader>Complete History</MediumHeader>
-              <p className="max-w-md text-grayishBlue">
+              <p className="max-w-md text-grayish-blue">
                 Retrieve any snippets from the first moment you started using
                 the app.
               </p>

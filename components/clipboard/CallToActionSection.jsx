@@ -18,14 +18,14 @@ function CallToActionSection() {
         <ButtonContainer>
           <a
             href="#"
-            className="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+            className="p-4 px-8 rounded-full shadow-lg bg-strong-cyan duration-200 hover:opacity-80"
           >
             Download for iOS
           </a>
 
           <a
             href="#"
-            className="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+            className="p-4 px-8 rounded-full shadow-lg bg-light-blue duration-200 hover:opacity-80"
           >
             Download for Mac
           </a>

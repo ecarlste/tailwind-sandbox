@@ -11,7 +11,7 @@ function HamburgerMenuButton(props) {
       <button
         id="menu-btn"
         type="button"
-        className={`z-40 block ${styles.hamburger} md:hidden focus:outline-none`}
+        className={`z-40 block ${styles.hamburger} md:hidden focus-visible:outline-hidden`}
         onClick={onClick}
       >
         <span className={openStyle + styles['hamburger-top']}></span>

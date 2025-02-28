@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <footer className="py-16 bg-veryDarkViolet">
+    <footer className="py-16 bg-very-dark-violet">
       <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/* Logo */}
         <img src="/images/shortly/logo.svg" alt="" />
@@ -17,19 +17,19 @@ function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Link shortening
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Branded links
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Analytics
               </a>
@@ -44,19 +44,19 @@ function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Blog
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Developers
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Support
               </a>
@@ -69,25 +69,25 @@ function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 About
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Our Team
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Careers
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayish-violet hover:text-cyan"
               >
                 Contact
               </a>

@@ -23,7 +23,7 @@ function SuperchargeSection() {
               className="mb-6"
             />
             <MediumHeader>Create Blocklists</MediumHeader>
-            <p className="max-w-md text-grayishBlue">
+            <p className="max-w-md text-grayish-blue">
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
@@ -37,7 +37,7 @@ function SuperchargeSection() {
               className="mb-6"
             />
             <MediumHeader>Plain Text Snippets</MediumHeader>
-            <p className="max-w-md text-grayishBlue">
+            <p className="max-w-md text-grayish-blue">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
@@ -50,7 +50,7 @@ function SuperchargeSection() {
               className="mb-6"
             />
             <MediumHeader>Sneak Preview</MediumHeader>
-            <p className="max-w-md text-grayishBlue">
+            <p className="max-w-md text-grayish-blue">
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>

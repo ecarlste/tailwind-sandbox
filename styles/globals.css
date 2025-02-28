@@ -1,3 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-cyan-light: hsl(180, 66%, 69%);
+  --color-dark-grayish-blue: hsl(210, 10%, 33%);
+  --color-dark-violet: hsl(257, 27%, 26%);
+  --color-grayish-blue: hsl(201, 11%, 66%);
+  --color-grayish-violet: hsl(257, 7%, 63%);
+  --color-light-blue: hsl(233, 100%, 69%);
+  --color-red: hsl(0, 87%, 67%);
+  --color-strong-cyan: hsl(171, 66%, 44%);
+  --color-very-dark-blue: hsl(255, 11%, 22%);
+  --color-very-dark-violet: hsl(260, 8%, 14%);
+
+  --font-sans: Bai Jamjuree, sans-serif;
+  --font-alata: var(--font-alata);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}

@@ -21,19 +21,19 @@ function NavBar() {
           <div className="hidden space-x-8 font-bold lg:flex">
             <a
               href="#"
-              className="text-grayishViolet hover:text-veryDarkViolet"
+              className="text-grayish-violet hover:text-very-dark-violet"
             >
               Features
             </a>
             <a
               href="#"
-              className="text-grayishViolet hover:text-veryDarkViolet"
+              className="text-grayish-violet hover:text-very-dark-violet"
             >
               Pricing
             </a>
             <a
               href="#"
-              className="text-grayishViolet hover:text-veryDarkViolet"
+              className="text-grayish-violet hover:text-very-dark-violet"
             >
               Resources
             </a>
@@ -41,8 +41,8 @@ function NavBar() {
         </div>
 
         {/* Right Buttons Menu */}
-        <div className="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
-          <div className="hover:text-veryDarkViolet">Login</div>
+        <div className="hidden items-center space-x-6 font-bold text-grayish-violet lg:flex">
+          <div className="hover:text-very-dark-violet">Login</div>
           <a
             href="#"
             className="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
