@@ -13,6 +13,18 @@ const josefin = Josefin_Sans({
   variable: "--font-josefin",
 });
 
+/**
+ * Renders the main Loopstudios site page.
+ *
+ * This component returns a <main> element styled with a custom font and CSS module classes.
+ * It encapsulates the following sections:
+ * - HeroSection: The top visual introduction.
+ * - FeaturesSection: Highlights the site's key features.
+ * - Showcase: Displays featured content.
+ * - Footer: Contains navigational links and additional information.
+ *
+ * @returns {JSX.Element} The rendered Loopstudios site page.
+ */
 function LoopstudiosSitePage() {
   return (
     <main className={`${josefin.variable} ${styles.loopstudios}`}>

@@ -11,6 +11,13 @@ import ReferencesSection from '../../../components/clipboard/ReferencesSection';
 import CallToActionSection from '../../../components/clipboard/CallToActionSection';
 import Footer from '../../../components/clipboard/Footer';
 
+/**
+ * Renders the main page of the Clipboard website.
+ *
+ * This component organizes and displays the primary sections of the site, including the hero, snippet, features, access details, supercharge, references, call-to-action, and footer.
+ *
+ * @returns {JSX.Element} The complete Clipboard site page.
+ */
 function ClipboardSitePage() {
   return (
     <main className={styles.clipboard}>

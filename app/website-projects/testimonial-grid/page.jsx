@@ -45,6 +45,16 @@ const testimonialCardsData = [
   },
 ];
 
+/**
+ * Renders a responsive grid layout populated with testimonial cards.
+ *
+ * The component constructs a main container that uses modular CSS styling combined with a specific
+ * Google font for typography. Testimonial cards are displayed in a grid that adapts to different
+ * screen sizes, with some cards conditionally rendered based on the viewport.
+ *
+ * @component
+ * @returns {JSX.Element} The testimonial grid layout.
+ */
 function TestimonialGridSitePage() {
   return (
     <main className={`${barlow.variable} ${styles.testimonialGrid} min-h-screen flex items-center`}>
