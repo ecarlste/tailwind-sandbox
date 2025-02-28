@@ -1,5 +1,6 @@
 import React from 'react';
 import { Josefin_Sans } from 'next/font/google';
+import styles from './styles.module.css';
 
 import HeroSection from '../../../components/loopstudios/HeroSection';
 import FeaturesSection from '../../../components/loopstudios/FeaturesSection';
@@ -9,21 +10,17 @@ import Footer from '../../../components/loopstudios/footer/Footer';
 const josefin = Josefin_Sans({
   subsets: ['latin'],
   weight: '300',
+  variable: "--font-josefin",
 });
 
 function LoopstudiosSitePage() {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${josefin.style.fontFamily};
-        }
-      `}</style>
+    <main className={`${josefin.variable} ${styles.loopstudios}`}>
       <HeroSection />
       <FeaturesSection />
       <Showcase />
       <Footer />
-    </>
+    </main>
   );
 }
 

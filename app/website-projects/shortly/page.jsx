@@ -1,5 +1,6 @@
 import React from 'react';
 import { Poppins } from 'next/font/google';
+import styles from './styles.module.css';
 
 import NavBar from '../../../components/shortly/nav/NavBar';
 import Footer from '../../../components/shortly/footer/Footer';
@@ -8,16 +9,12 @@ import CallToActionSection from '../../../components/shortly/CallToActionSection
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
+  variable: "--poppins-font",
 });
 
 function ShortlySitePage() {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${poppins.style.fontFamily};
-        }
-      `}</style>
+    <main className={`${poppins.variable} ${styles.shortly}`}>
       <NavBar />
 
       {/* Hero Section */}
@@ -200,7 +197,7 @@ function ShortlySitePage() {
 
       <CallToActionSection />
       <Footer />
-    </>
+    </main>
   );
 }
 
