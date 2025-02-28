@@ -2,13 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install asdf:
+Follow the [installation instructions](https://asdf-vm.com/guide/getting-started.html#_1-install-asdf) for `asdf`.
+
+Then, install the projects tools like `pnpm` and `nodejs`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+asdf install
+```
+
+Now, run the development server:
+
+```bash
 pnpm dev
 ```
 
