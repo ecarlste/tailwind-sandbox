@@ -16,7 +16,7 @@ function HeroSection() {
         />
         <LargeHeader>A history of everything you copy</LargeHeader>
 
-        <SectionContent className="mb-10 text-2xl text-grayishBlue">
+        <SectionContent className="mb-10 text-2xl text-grayish-blue">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </SectionContent>
@@ -24,13 +24,13 @@ function HeroSection() {
         <ButtonContainer>
           <a
             href="#"
-            className="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+            className="p-4 px-8 rounded-full shadow-lg bg-strong-cyan duration-200 hover:opacity-80"
           >
             Download for iOS
           </a>
           <a
             href="#"
-            className="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+            className="p-4 px-8 rounded-full shadow-lg bg-light-blue duration-200 hover:opacity-80"
           >
             Download for Mac
           </a>

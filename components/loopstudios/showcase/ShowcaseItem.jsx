@@ -14,7 +14,7 @@ function ShowcaseItem(props) {
       <img src={mobileImage} alt="" className="w-full md:hidden" />
 
       {/* <!-- Item Gradient --> */}
-      <div className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
+      <div className="absolute top-0 bottom-0 right-0 left-0 bg-linear-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
 
       <CreationName text={name} />
     </div>

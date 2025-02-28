@@ -56,16 +56,16 @@ function ShortlySitePage() {
           {/* Form */}
           <form
             id="link-form"
-            className="relative flex flex-col w-full p-10 -mt-10 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
+            className="relative flex flex-col w-full p-10 -mt-10 space-y-4 bg-dark-violet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
           >
             <input
               type="text"
-              className="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+              className="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-hidden"
               placeholder="Shorten a link here"
               id="link-input"
             />
 
-            <button className="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2">
+            <button className="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyan-light focus:outline-hidden md:py-2">
               Shorten It!
             </button>
 
@@ -78,13 +78,13 @@ function ShortlySitePage() {
 
           {/* Link 1 */}
           <div className="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-            <p className="font-bold text-center text-veryDarkViolet md:text-left">
+            <p className="font-bold text-center text-very-dark-violet md:text-left">
               https://frontendmentor.io
             </p>
 
             <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-between-y-2 md:flex-row md:space-y-0">
               <div className="font-bold text-cyan">https://rel.ink/k4IKyk</div>
-              <button className="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">
+              <button className="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-hidden">
                 Copy
               </button>
             </div>
@@ -92,13 +92,13 @@ function ShortlySitePage() {
 
           {/* Link 2 */}
           <div className="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-            <p className="font-bold text-center text-veryDarkViolet md:text-left">
+            <p className="font-bold text-center text-very-dark-violet md:text-left">
               https://twitter.com/frontendmentor
             </p>
 
             <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-between-y-2 md:flex-row md:space-y-0">
               <div className="font-bold text-cyan">https://rel.ink/gxOXp9</div>
-              <button className="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none">
+              <button className="p-2 px-8 text-white bg-dark-violet rounded-lg hover:opacity-70 focus:outline-hidden">
                 Copy
               </button>
             </div>
@@ -106,13 +106,13 @@ function ShortlySitePage() {
 
           {/* Link 3 */}
           <div className="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-            <p className="font-bold text-center text-veryDarkViolet md:text-left">
+            <p className="font-bold text-center text-very-dark-violet md:text-left">
               https://linkedin.com/frontend-mentor
             </p>
 
             <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-between-y-2 md:flex-row md:space-y-0">
               <div className="font-bold text-cyan">https://rel.ink/gob3X9</div>
-              <button className="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">
+              <button className="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-hidden">
                 Copy
               </button>
             </div>
@@ -145,7 +145,7 @@ function ShortlySitePage() {
             {/* Image Positioning */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
                 <img src="/images/shortly/icon-brand-recognition.svg" alt="" />
               </div>
             </div>
@@ -164,7 +164,7 @@ function ShortlySitePage() {
             {/* Image Positioning */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
                 <img src="/images/shortly/icon-detailed-records.svg" alt="" />
               </div>
             </div>
@@ -183,7 +183,7 @@ function ShortlySitePage() {
             {/* Image Positioning */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
                 <img src="/images/shortly/icon-fully-customizable.svg" alt="" />
               </div>
             </div>

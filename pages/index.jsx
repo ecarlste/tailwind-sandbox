@@ -51,7 +51,7 @@ export default function HomePage() {
 //           <img
 //             src="images/testimonial-grid-website-screenshot-desktop.png"
 //             alt="Testimonial Grid Website"
-//             class="border-2 shadow"
+//             class="border-2 shadow-sm"
 //           />
 //         </a>
 //       </div>
