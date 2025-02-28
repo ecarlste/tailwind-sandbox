@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, install asdf:
 Follow the [installation instructions](https://asdf-vm.com/guide/getting-started.html#_1-install-asdf) for `asdf`.
 
-Then, install the project tools like `pnpm` and `nodejs` using `asdf`:
+Then, install the project tools like `pnpm` and `Node.js` using `asdf`:
 
 ```bash
 asdf install
