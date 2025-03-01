@@ -52,7 +52,8 @@ export default function QrCodeSitePage() {
             >
               Frontend Mentor
             </a>
-            . Coded by <a href="#">Erik S. Carlsten</a>.
+            . Coded by{" "}
+            <a href="https://github.com/ecarlste">Erik S. Carlsten</a>.
           </div>
         </div>
       </div>
