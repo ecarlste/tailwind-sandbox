@@ -1,8 +1,8 @@
-import GalleryItem from '../components/home-page/GalleryItem';
+import GalleryItem from "../components/home-page/GalleryItem";
 
-import LargeHeader from '../components/clipboard/headers/LargeHeader';
-import SectionContainer from '../components/clipboard/section/SectionContainer';
-import SectionContent from '../components/clipboard/section/SectionContent';
+import LargeHeader from "../components/clipboard/headers/LargeHeader";
+import SectionContainer from "../components/clipboard/section/SectionContainer";
+import SectionContent from "../components/clipboard/section/SectionContent";
 
 export default function HomePage() {
   return (
@@ -40,6 +40,12 @@ export default function HomePage() {
           linkUrl="website-projects/testimonial-grid"
           image="images/testimonial-grid-website-screenshot-desktop.png"
           imageAlt="Testimonial Grid Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/qr-code"
+          image="images/qr-code-website-screenshot-desktop.png"
+          imageAlt="QR Code Website"
         />
       </div>
     </>
