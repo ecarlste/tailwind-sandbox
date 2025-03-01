@@ -1,0 +1,11 @@
+.clipboard {
+  background-image: url("/images/clipboard/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  .clipboard {
+    background-image: url("/images/clipboard/bg-header-mobile.png");
+  }
+}

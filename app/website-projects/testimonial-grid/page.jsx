@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.module.css';
 
 import { Barlow_Semi_Condensed } from 'next/font/google';
 import TestimonialCard from '../../../components/testimonial-grid/TestimonialCard';
@@ -6,6 +7,7 @@ import TestimonialCard from '../../../components/testimonial-grid/TestimonialCar
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
   weight: ['400', '600'],
+  variable: '--font-barlow-semi-condensed',
 });
 
 const testimonialCardsData = [
@@ -43,18 +45,19 @@ const testimonialCardsData = [
   },
 ];
 
+/**
+ * Renders a responsive grid layout populated with testimonial cards.
+ *
+ * The component constructs a main container that uses modular CSS styling combined with a specific
+ * Google font for typography. Testimonial cards are displayed in a grid that adapts to different
+ * screen sizes, with some cards conditionally rendered based on the viewport.
+ *
+ * @component
+ * @returns {JSX.Element} The testimonial grid layout.
+ */
 function TestimonialGridSitePage() {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${barlow.style.fontFamily};
-        }
-
-        body {
-          background-color: rgb(229 231 235);
-        }
-      `}</style>
+    <main className={`${barlow.variable} ${styles.testimonialGrid} min-h-screen flex items-center`}>
       {/* Global Container */}
       <div className="container mx-auto max-w-7xl p-2 md:p-10">
         <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
@@ -86,7 +89,7 @@ function TestimonialGridSitePage() {
           />
         </div>
       </div>
-    </>
+    </main>
   );
 }
 

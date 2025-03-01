@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './styles.module.css';
+
 import HeroSection from '../../../components/clipboard/HeroSection';
 import SnippetSection from '../../../components/clipboard/SnippetSection';
 import FeaturesSection from '../../../components/clipboard/FeaturesSection';
@@ -9,23 +11,16 @@ import ReferencesSection from '../../../components/clipboard/ReferencesSection';
 import CallToActionSection from '../../../components/clipboard/CallToActionSection';
 import Footer from '../../../components/clipboard/Footer';
 
+/**
+ * Renders the main page of the Clipboard website.
+ *
+ * This component organizes and displays the primary sections of the site, including the hero, snippet, features, access details, supercharge, references, call-to-action, and footer.
+ *
+ * @returns {JSX.Element} The complete Clipboard site page.
+ */
 function ClipboardSitePage() {
   return (
-    <>
-      <style global jsx>{`
-        body {
-          background-image: url('/images/clipboard/bg-header-desktop.png');
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-
-        @media (max-width: 576px) {
-          body {
-            background-image: url('/images/clipboard/bg-header-mobile.png');
-          }
-        }
-      `}</style>
-
+    <main className={styles.clipboard}>
       <HeroSection />
       <SnippetSection />
       <FeaturesSection />
@@ -34,7 +29,7 @@ function ClipboardSitePage() {
       <ReferencesSection />
       <CallToActionSection />
       <Footer />
-    </>
+    </main>
   );
 }
 

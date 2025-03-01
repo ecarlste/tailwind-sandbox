@@ -1,5 +1,6 @@
 import React from 'react';
 import { Poppins } from 'next/font/google';
+import styles from './styles.module.css';
 
 import NavBar from '../../../components/shortly/nav/NavBar';
 import Footer from '../../../components/shortly/footer/Footer';
@@ -8,16 +9,20 @@ import CallToActionSection from '../../../components/shortly/CallToActionSection
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
+  variable: "--poppins-font",
 });
 
+/**
+ * Renders the main layout for the Shortly link shortening service page.
+ *
+ * This component constructs the primary UI of the Shortly site, including the navigation bar,
+ * hero section with headline and call-to-action, link shortening form with sample links and error messaging,
+ * advanced statistics preview, feature highlight boxes, and concluding call-to-action and footer sections.
+ * Modular CSS styling is applied using a combination of the Poppins font variable and CSS modules.
+ */
 function ShortlySitePage() {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${poppins.style.fontFamily};
-        }
-      `}</style>
+    <main className={`${poppins.variable} ${styles.shortly}`}>
       <NavBar />
 
       {/* Hero Section */}
@@ -200,7 +205,7 @@ function ShortlySitePage() {
 
       <CallToActionSection />
       <Footer />
-    </>
+    </main>
   );
 }
 

@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import HamburgerMenuButton from './HamburgerMenuButton';
 import MobileMenu from './MobileMenu';
