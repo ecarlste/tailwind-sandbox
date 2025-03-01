@@ -36,11 +36,11 @@ export default function QrCodeSitePage() {
         />
         <div className="px-3 space-y-4">
           <h1
-            className={"text-slate-900 text-[22px]/7 " + outfitBold.className}
+            className={`text-slate-900 text-[22px]/7  ${outfitBold.className}`}
           >
             Improve your front-end skills by building projects
           </h1>
-          <p className={"text-slate-500 text-[15px] " + outfit.className}>
+          <p className={`text-slate-500 text-[15px] ${outfit.className}`}>
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>
