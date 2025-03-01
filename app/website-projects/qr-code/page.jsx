@@ -2,6 +2,17 @@ import Image from "next/image";
 import { Outfit } from "next/font/google";
 import styles from "./styles.module.css";
 
+export const generateMetadata = () => {
+  return {
+    title: "QR Code Component",
+    description:
+      "Scan the QR code to visit Frontend Mentor and take your coding skills to the next level",
+    icons: {
+      icon: "/images/qr-code/favicon-32x32.png",
+    },
+  };
+};
+
 const outfit = Outfit({
   subsets: ["latin"],
   weight: "400",
