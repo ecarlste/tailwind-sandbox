@@ -54,6 +54,10 @@ You can also use other stand alone properties like `leading-none` or `leading-<n
 
 I'm still not feeling super confident at this point with how to position text within a container like a div or paragraph. In this solution I used `px-3` on the `div` containing all three sections of text to squish it in a bit. I'd like to play around with this a bit more and see if there are better ways to do this.
 
+I also didn't extract the `qr-code` out into it's own react component that's passed props to solve this challenge. I'll likely create a follow up PR to do exactly that just in case I ever want to use it for something.
+
+It would be fun to take the QR Code image and break it up into the background and also the QR Code itself, since you would likely be passing a QR code into the component as a prop and rendering it on top of the blue background.
+
 ## Author
 
 - GitHub - [ecarlste](https://github.com/ecarlste)
