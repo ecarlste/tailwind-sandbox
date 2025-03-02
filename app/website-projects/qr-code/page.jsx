@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Outfit } from "next/font/google";
-import styles from "./styles.module.css";
 
 export const generateMetadata = () => {
   return {
@@ -44,18 +43,6 @@ export default function QrCodeSitePage() {
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>
-          <div className={`${styles.attribution} ${outfit.className}`}>
-            Challenge by{" "}
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Frontend Mentor
-            </a>
-            . Coded by{" "}
-            <a href="https://github.com/ecarlste">Erik S. Carlsten</a>.
-          </div>
         </div>
       </div>
     </main>
