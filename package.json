@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "./bin/check-versions.bash",
+    "prebuild": "node ./bin/check-versions.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,14 +15,17 @@
   "dependencies": {
     "next": "^15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
     "@tailwindcss/postcss": "^4.0.9",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.4.23",
     "tailwindcss": "^4.0.9"
   },
   "packageManager": "pnpm@10.5.2",
   "engines": {
     "node": "22.x",
-    "pnpm": "10.5.2"
+    "pnpm": "10.5.1"
   }
 }
