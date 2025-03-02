@@ -39,7 +39,7 @@ export default function QrCodeSitePage() {
           >
             Improve your front-end skills by building projects
           </h1>
-          <p className={`text-slate-500 text-[15px] ${outfit.className}`}>
+          <p className={`text-slate-500 text-[15px]/5 ${outfit.className}`}>
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>
