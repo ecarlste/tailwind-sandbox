@@ -29,8 +29,8 @@ export default function QrCodeSitePage() {
         <Image
           className="rounded-xl"
           src="/images/qr-code/image-qr-code.png"
-          width={286}
-          height={286}
+          width={288}
+          height={288}
           alt="QR code"
         />
         <div className="p-3 pb-5 pt-2 space-y-4">
