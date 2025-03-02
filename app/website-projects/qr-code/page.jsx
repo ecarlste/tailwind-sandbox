@@ -25,7 +25,7 @@ const outfitBold = Outfit({
 export default function QrCodeSitePage() {
   return (
     <main className="bg-slate-300 min-h-screen flex items-center justify-center">
-      <div className="bg-white p-4 rounded-3xl shadow-lg text-center space-y-4  max-w-xs">
+      <div className="bg-white p-4 pb-10 rounded-3xl shadow-lg text-center space-y-4  max-w-xs">
         <Image
           className="rounded-xl"
           src="/images/qr-code/image-qr-code.png"
@@ -33,7 +33,7 @@ export default function QrCodeSitePage() {
           height={288}
           alt="QR code"
         />
-        <div className="p-3 pb-5 pt-2 space-y-4">
+        <div className="px-3 pt-1 space-y-4">
           <h1
             className={`text-slate-900 text-[22px]/7  ${outfitBold.className}`}
           >
