@@ -33,7 +33,7 @@ export default function QrCodeSitePage() {
           height={288}
           alt="QR code"
         />
-        <div className="px-3 pt-1 space-y-4">
+        <div className="px-3 pt-1.5 space-y-4">
           <h1
             className={`text-slate-900 text-[22px]/7  ${outfitBold.className}`}
           >
