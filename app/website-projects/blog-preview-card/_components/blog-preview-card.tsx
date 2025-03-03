@@ -22,7 +22,7 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
   return (
     <div
       className={
-        `flex flex-col gap-5 p-4 bg-white rounded-2xl shadow-solid ${figtree.className} text-gray-950 ` +
+        `flex flex-col gap-5 p-5 bg-white rounded-2xl shadow-solid ${figtree.className} text-gray-950 ` +
         `border max-w-[380px] border-gray-950 shadow-gray-950`
       }
     >
