@@ -33,7 +33,7 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
       />
 
       <div className="flex flex-col gap-3">
-        <div className="font-bold bg-yellow rounded-sm p-2 w-min text-sm">
+        <div className="font-bold bg-yellow rounded-sm p-2 py-1.5 w-min text-sm">
           {post.category}
         </div>
         <span className="text-sm">Published {date}</span>
