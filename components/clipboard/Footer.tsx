@@ -2,6 +2,11 @@ import React from "react";
 import SectionContainer from "./section/SectionContainer";
 
 import styles from "./Footer.module.css";
+import Image from "next/image";
+
+import iconFacebook from "@/public/images/clipboard/icon-facebook.svg";
+import iconTwitter from "@/public/images/clipboard/icon-twitter.svg";
+import iconInstagram from "@/public/images/clipboard/icon-instagram.svg";
 
 function Footer() {
   return (
@@ -9,7 +14,13 @@ function Footer() {
       <SectionContainer>
         <div className="flex flex-col items-center justify-between md:flex-row">
           {/* <!-- Image --> */}
-          <img src="/images/clipboard/logo.svg" alt="" className="scale-50" />
+          <Image
+            src="/images/clipboard/logo.svg"
+            width={125}
+            height={125}
+            alt=""
+            className="scale-50"
+          />
 
           {/* <!-- Container for Menus & Social--> */}
           <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayish-blue">
@@ -52,26 +63,26 @@ function Footer() {
             </div>
 
             {/* <!-- Social Icons --> */}
-            <div className="flex justify-between w-32 py-1">
+            <div className="flex justify-between w-32 py-1 items-center">
               <a href="#">
-                <img
-                  src="/images/clipboard/icon-facebook.svg"
+                <Image
+                  src={iconFacebook}
                   alt=""
                   className={"duration-200 " + styles.ficon}
                 />
               </a>
 
               <a href="#">
-                <img
-                  src="/images/clipboard/icon-twitter.svg"
+                <Image
+                  src={iconTwitter}
                   alt=""
                   className={"duration-200 " + styles.ficon}
                 />
               </a>
 
               <a href="#">
-                <img
-                  src="/images/clipboard/icon-instagram.svg"
+                <Image
+                  src={iconInstagram}
                   alt=""
                   className={"duration-200 " + styles.ficon}
                 />

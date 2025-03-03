@@ -1,13 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
+import Image from "next/image";
+
+import shortlyLogoSvg from "@/public/images/shortly/logo.svg";
+import facebookIconSvg from "@/public/images/shortly/icon-facebook.svg";
+import twitterIconSvg from "@/public/images/shortly/icon-twitter.svg";
+import pinterestIconSvg from "@/public/images/shortly/icon-pinterest.svg";
+import instagramIconSvg from "@/public/images/shortly/icon-instagram.svg";
 
 function Footer() {
   return (
     <footer className="py-16 bg-very-dark-violet">
       <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/* Logo */}
-        <img src="/images/shortly/logo.svg" alt="" />
+        <Image src={shortlyLogoSvg} alt="" />
 
         {/* Menus Container */}
         <div className="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
@@ -96,34 +103,18 @@ function Footer() {
         </div>
 
         {/* Social Container */}
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 items-center">
           <a href="#">
-            <img
-              src="/images/shortly/icon-facebook.svg"
-              alt=""
-              className={styles.ficon}
-            />
+            <Image src={facebookIconSvg} alt="" className={styles.ficon} />
           </a>
           <a href="#">
-            <img
-              src="/images/shortly/icon-twitter.svg"
-              alt=""
-              className={styles.ficon}
-            />
+            <Image src={twitterIconSvg} alt="" className={styles.ficon} />
           </a>
           <a href="#">
-            <img
-              src="/images/shortly/icon-pinterest.svg"
-              alt=""
-              className={styles.ficon}
-            />
+            <Image src={pinterestIconSvg} alt="" className={styles.ficon} />
           </a>
           <a href="#">
-            <img
-              src="/images/shortly/icon-instagram.svg"
-              alt=""
-              className={styles.ficon}
-            />
+            <Image src={instagramIconSvg} alt="" className={styles.ficon} />
           </a>
         </div>
       </div>

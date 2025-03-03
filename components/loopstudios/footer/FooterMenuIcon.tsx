@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function FooterMenuIcon(props: { link: string; iconImage: string }) {
@@ -5,7 +6,7 @@ function FooterMenuIcon(props: { link: string; iconImage: string }) {
   return (
     <div className="h-8 group">
       <a href={link}>
-        <img src={iconImage} alt="" className="h-6" />
+        <Image src={iconImage} alt="" className="h-6" />
       </a>
     </div>
   );

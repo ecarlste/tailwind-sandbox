@@ -1,19 +1,17 @@
-import React from 'react';
+import React from "react";
+import logoSvg from "@/public/images/clipboard/logo.svg";
 
-import SectionContainer from './section/SectionContainer';
-import SectionContent from './section/SectionContent';
-import LargeHeader from './headers/LargeHeader';
-import ButtonContainer from './buttons/ButtonContainer';
+import SectionContainer from "./section/SectionContainer";
+import SectionContent from "./section/SectionContent";
+import LargeHeader from "./headers/LargeHeader";
+import ButtonContainer from "./buttons/ButtonContainer";
+import Image from "next/image";
 
 function HeroSection() {
   return (
     <section id="hero">
       <SectionContainer className="mb-40 pt-16">
-        <img
-          src="/images/clipboard/logo.svg"
-          alt=""
-          className="mx-auto my-16"
-        />
+        <Image src={logoSvg} alt="" className="mx-auto my-16" />
         <LargeHeader>A history of everything you copy</LargeHeader>
 
         <SectionContent className="mb-10 text-2xl text-grayish-blue">

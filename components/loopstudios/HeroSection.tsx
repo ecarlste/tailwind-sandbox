@@ -1,11 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import styles from './HeroSection.module.css';
-import DesktopMenu from './nav/DesktopMenu';
-import MobileMenu from './nav/MobileMenu';
-import HamburgerMenuButton from './nav/HamburgerMenuButton';
+import styles from "./HeroSection.module.css";
+import DesktopMenu from "./nav/DesktopMenu";
+import MobileMenu from "./nav/MobileMenu";
+import HamburgerMenuButton from "./nav/HamburgerMenuButton";
+
+import logoSvg from "@/public/images/loopstudios/logo.svg";
+import Image from "next/image";
 
 function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +23,7 @@ function HeroSection() {
         {/* <!-- Menu/Logo Container --> */}
         <nav className="flex items-center justify-between font-bold text-white">
           {/* <!-- Logo --> */}
-          <img src="/images/loopstudios/logo.svg" alt="" />
+          <Image src={logoSvg} alt="" />
           <DesktopMenu />
 
           {/* <!-- Hamburger Button --> */}

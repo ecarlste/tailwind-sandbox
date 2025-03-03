@@ -1,9 +1,9 @@
-import React from 'react';
-import SectionContainer from './section/SectionContainer';
-import SectionContent from './section/SectionContent';
+import React from "react";
+import SectionContainer from "./section/SectionContainer";
+import SectionContent from "./section/SectionContent";
 
-import LargeHeader from './headers/LargeHeader';
-import ButtonContainer from './buttons/ButtonContainer';
+import LargeHeader from "./headers/LargeHeader";
+import ButtonContainer from "./buttons/ButtonContainer";
 
 function CallToActionSection() {
   return (
@@ -12,7 +12,7 @@ function CallToActionSection() {
         <LargeHeader>Clipboard for iOS and MacOS</LargeHeader>
         <SectionContent className="mb-10">
           Available for free on the App Store. Download for Mac or iOS, sync
-          with iCloud and you're ready to start adding to your clipboard.
+          with iCloud and you&apos;re ready to start adding to your clipboard.
         </SectionContent>
 
         <ButtonContainer>

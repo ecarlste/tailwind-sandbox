@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import SectionContainer from './section/SectionContainer';
-import MediumHeader from './headers/MediumHeader';
+import SectionContainer from "./section/SectionContainer";
+import MediumHeader from "./headers/MediumHeader";
+import Image from "next/image";
 
 function FeaturesSection() {
   return (
@@ -10,8 +11,10 @@ function FeaturesSection() {
         <div className="relative flex flex-col md:flex-row md:space-x-32">
           {/* <!-- Image --> */}
           <div className="md:w-3/5 md:my-auto">
-            <img
+            <Image
               src="/images/clipboard/image-computer.png"
+              width={752}
+              height={572}
               alt=""
               className="md:object-contain"
             />

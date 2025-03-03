@@ -1,8 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import styles from './TestimonialCard.module.css';
+import styles from "./TestimonialCard.module.css";
 
-function TestimonialCard(props) {
+import bgPatternQuotation from "@/public/images/testimonial-grid/bg-pattern-quotation.svg";
+import Image from "next/image";
+
+function TestimonialCard(props: {
+  data: {
+    image: string;
+    name: string;
+    headline: string;
+    fullText: string;
+  };
+  showQuotes: boolean;
+  lineClamp?: number;
+  className?: string;
+}) {
   const { data, showQuotes, lineClamp = 5 } = props;
 
   const containerStyles = `p-10 rounded-xl ${props.className}`.trimEnd();
@@ -12,15 +25,15 @@ function TestimonialCard(props) {
     <>
       <div className={containerStyles}>
         {showQuotes && (
-          <img
-            src="/images/testimonial-grid/bg-pattern-quotation.svg"
+          <Image
+            src={bgPatternQuotation}
             alt=""
             className="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150"
           />
         )}
 
         <div className="flex z-10 space-x-4">
-          <img
+          <Image
             src={data.image}
             alt=""
             className="w-10 h-10 rounded-full ring-2 ring-purple-300"

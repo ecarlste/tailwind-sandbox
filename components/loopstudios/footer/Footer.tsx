@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import FooterSocialCopyContainer from './FooterSocialCopyContainer';
-import FooterMenuItemsContainer from './FooterMenuItemsContainer';
+import FooterSocialCopyContainer from "./FooterSocialCopyContainer";
+import FooterMenuItemsContainer from "./FooterMenuItemsContainer";
+import Image from "next/image";
+
+import logoSvg from "@/public/images/loopstudios/logo.svg";
 
 function Footer() {
   return (
@@ -13,11 +16,7 @@ function Footer() {
           <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
             {/* <!-- Logo  --> */}
             <div className="h-8">
-              <img
-                src="/images/loopstudios/logo.svg"
-                alt=""
-                className="w-44 md:ml-3"
-              />
+              <Image src={logoSvg} alt="" className="w-44 md:ml-3" />
             </div>
             <FooterMenuItemsContainer />
           </div>

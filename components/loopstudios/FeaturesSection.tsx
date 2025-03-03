@@ -1,4 +1,7 @@
-import React from 'react';
+import Image from "next/image";
+import React from "react";
+
+import imageInteractive from "@/public/images/loopstudios/desktop/image-interactive.jpg";
 
 function FeaturesSection() {
   return (
@@ -6,7 +9,7 @@ function FeaturesSection() {
       {/* <!-- Feature Container --> */}
       <div className="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
         {/* <!-- Image --> */}
-        <img src="/images/loopstudios/desktop/image-interactive.jpg" alt="" />
+        <Image src={imageInteractive} alt="" />
 
         {/* <!-- Text Container --> */}
         <div className="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">

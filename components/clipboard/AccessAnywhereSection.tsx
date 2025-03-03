@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import SectionContainer from './section/SectionContainer';
-import SectionContent from './section/SectionContent';
-import LargeHeader from './headers/LargeHeader';
+import SectionContainer from "./section/SectionContainer";
+import SectionContent from "./section/SectionContent";
+import LargeHeader from "./headers/LargeHeader";
+import Image from "next/image";
 
 function AccessAnywhereSection() {
   return (
@@ -14,8 +15,10 @@ function AccessAnywhereSection() {
           Clipboard snippets in a few simple clicks.
         </SectionContent>
 
-        <img
+        <Image
           src="/images/clipboard/image-devices.png"
+          width={905}
+          height={575}
           alt=""
           className="mx-auto"
         />

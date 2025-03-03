@@ -1,8 +1,11 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import HamburgerMenuButton from './HamburgerMenuButton';
-import MobileMenu from './MobileMenu';
+import React, { useState } from "react";
+import HamburgerMenuButton from "./HamburgerMenuButton";
+import MobileMenu from "./MobileMenu";
+
+import shortlyLogoSvg from "@/public/images/shortly/logo.svg";
+import Image from "next/image";
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +21,7 @@ function NavBar() {
         {/* Flex Container for Logo/Menu */}
         <div className="flex items-center space-x-20">
           {/* Logo */}
-          <img src="/images/shortly/logo.svg" alt="" />
+          <Image src={shortlyLogoSvg} alt="" />
           {/* Left Menu */}
           <div className="hidden space-x-8 font-bold lg:flex">
             <a
