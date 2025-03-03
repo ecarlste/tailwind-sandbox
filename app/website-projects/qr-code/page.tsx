@@ -1,4 +1,3 @@
-import { Outfit } from "next/font/google";
 import qrCodeImage from "@/public/images/qr-code/image-qr-code.png";
 import QrCodeCard from "./_components/qr-code-card";
 
@@ -12,16 +11,6 @@ export const generateMetadata = () => {
     },
   };
 };
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const outfitBold = Outfit({
-  subsets: ["latin"],
-  weight: "700",
-});
 
 export default function QrCodeSitePage() {
   const heading = "Improve your front-end skills by building projects";
