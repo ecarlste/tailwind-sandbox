@@ -37,9 +37,9 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
           {post.category}
         </div>
         <span className="text-sm">Published {date}</span>
-        <span className="font-bold text-2xl hover:text-yellow mb-1">
+        <h1 className="font-bold text-2xl hover:text-yellow mb-1">
           <Link href="#">{post.title}</Link>
-        </span>
+        </h1>
         <span className="text-gray-500 mb-3">{post.description}</span>
         <div className="flex items-center gap-3">
           <Image
