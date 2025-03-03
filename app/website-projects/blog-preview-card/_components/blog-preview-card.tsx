@@ -48,7 +48,7 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
             alt={`Avatar image of ${post.author.name}`}
             width={28}
           />
-          <span className={`font-bold text-sm`}>Greg Hooper</span>
+          <span className={`font-bold text-sm`}>{post.author.name}</span>
         </div>
       </div>
     </div>
