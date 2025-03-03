@@ -1,6 +1,7 @@
 import { Figtree } from "next/font/google";
 import { BlogPost } from "../blog-post";
 import Image from "next/image";
+import Link from "next/link";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -37,7 +38,9 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
           {post.category}
         </div>
         <span className="text-xs">Published {date}</span>
-        <span className="font-bold text-xl">{post.title}</span>
+        <span className="font-bold text-xl hover:text-yellow">
+          <Link href="#">{post.title}</Link>
+        </span>
         <span className="text-gray-500 text-sm">{post.description}</span>
         <div className="flex items-center gap-2">
           <Image
