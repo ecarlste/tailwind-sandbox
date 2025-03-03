@@ -33,14 +33,14 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
       />
 
       <div className="flex flex-col gap-3">
-        <div className="font-bold bg-yellow rounded-sm p-2 py-1.5 w-min text-sm">
+        <div className="font-bold bg-yellow rounded-sm p-3 py-1 w-min text-sm">
           {post.category}
         </div>
         <span className="text-sm">Published {date}</span>
         <span className="font-bold text-2xl hover:text-yellow mb-1">
           <Link href="#">{post.title}</Link>
         </span>
-        <span className="text-gray-500 mb-2">{post.description}</span>
+        <span className="text-gray-500 mb-3">{post.description}</span>
         <div className="flex items-center gap-3">
           <Image
             src={post.author.avatar}
