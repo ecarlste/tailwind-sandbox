@@ -23,6 +23,7 @@ export default function QrCodeSitePage() {
         qrCodeImage={qrCodeImage}
         heading={heading}
         description={description}
+        priority
       />
     </main>
   );
