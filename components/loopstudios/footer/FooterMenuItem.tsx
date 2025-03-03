@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function FooterMenuItem(props) {
+function FooterMenuItem(props: { text: string }) {
   const { text } = props;
 
   return (

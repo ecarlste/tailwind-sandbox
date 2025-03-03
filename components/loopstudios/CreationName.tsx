@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function CreationName(props) {
+function CreationName(props: { text: string }) {
   const { text } = props;
 
   return (

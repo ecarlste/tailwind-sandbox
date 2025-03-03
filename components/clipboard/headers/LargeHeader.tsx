@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function LargeHeader(props) {
+function LargeHeader(props: { children: React.ReactNode }) {
   return (
     <h3 className="mb-8 text-4xl font-bold text-dark-grayish-blue md:text-5xl">
       {props.children}

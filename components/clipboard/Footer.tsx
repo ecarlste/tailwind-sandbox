@@ -1,7 +1,7 @@
-import React from 'react';
-import SectionContainer from './section/SectionContainer';
+import React from "react";
+import SectionContainer from "./section/SectionContainer";
 
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
@@ -55,9 +55,9 @@ function Footer() {
             <div className="flex justify-between w-32 py-1">
               <a href="#">
                 <img
-                  src="images/clipboard/icon-facebook.svg"
+                  src="/images/clipboard/icon-facebook.svg"
                   alt=""
-                  className={'duration-200 ' + styles.ficon}
+                  className={"duration-200 " + styles.ficon}
                 />
               </a>
 
@@ -65,7 +65,7 @@ function Footer() {
                 <img
                   src="/images/clipboard/icon-twitter.svg"
                   alt=""
-                  className={'duration-200 ' + styles.ficon}
+                  className={"duration-200 " + styles.ficon}
                 />
               </a>
 
@@ -73,7 +73,7 @@ function Footer() {
                 <img
                   src="/images/clipboard/icon-instagram.svg"
                   alt=""
-                  className={'duration-200 ' + styles.ficon}
+                  className={"duration-200 " + styles.ficon}
                 />
               </a>
             </div>

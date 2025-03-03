@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function MobileMenu(props) {
+function MobileMenu(props: { isOpen: boolean }) {
   const { isOpen } = props;
 
   return (
     <div
       id="menu"
       className={`absolute ${
-        isOpen ? 'flex' : 'hidden'
+        isOpen ? "flex" : "hidden"
       } p-6 rounded-lg bg-dark-violet left-6 right-6 top-20 z-100`}
     >
       <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-xs">

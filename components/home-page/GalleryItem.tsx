@@ -1,7 +1,11 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-function GalleryItem(props) {
+function GalleryItem(props: {
+  linkUrl: string;
+  image: string;
+  imageAlt: string;
+}) {
   const { linkUrl, image, imageAlt } = props;
 
   return (

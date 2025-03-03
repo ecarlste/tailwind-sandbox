@@ -1,7 +1,11 @@
-import React from 'react';
-import CreationName from '../CreationName';
+import React from "react";
+import CreationName from "../CreationName";
 
-function ShowcaseItem(props) {
+function ShowcaseItem(props: {
+  desktopImage: string;
+  mobileImage: string;
+  name: string;
+}) {
   const { desktopImage, mobileImage, name } = props;
 
   return (
