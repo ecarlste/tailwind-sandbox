@@ -3,16 +3,16 @@ import React from "react";
 import styles from "./TestimonialCard.module.css";
 
 import bgPatternQuotation from "@/public/images/testimonial-grid/bg-pattern-quotation.svg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 function TestimonialCard(props: {
   data: {
-    image: string;
+    image: StaticImageData;
     name: string;
     headline: string;
     fullText: string;
   };
-  showQuotes: boolean;
+  showQuotes?: boolean;
   lineClamp?: number;
   className?: string;
 }) {

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 
 import { Barlow_Semi_Condensed } from "next/font/google";
-import TestimonialCard from "../../../components/testimonial-grid/TestimonialCard";
+import TestimonialCard from "@/components/testimonial-grid/TestimonialCard";
 
 import imageDaniel from "@/public/images/testimonial-grid/image-daniel.jpg";
 import imageJonathan from "@/public/images/testimonial-grid/image-jonathan.jpg";
@@ -51,16 +51,6 @@ const testimonialCardsData = [
   },
 ];
 
-/**
- * Renders a responsive grid layout populated with testimonial cards.
- *
- * The component constructs a main container that uses modular CSS styling combined with a specific
- * Google font for typography. Testimonial cards are displayed in a grid that adapts to different
- * screen sizes, with some cards conditionally rendered based on the viewport.
- *
- * @component
- * @returns {JSX.Element} The testimonial grid layout.
- */
 function TestimonialGridSitePage() {
   return (
     <main
