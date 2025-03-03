@@ -22,7 +22,7 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
   return (
     <div
       className={
-        `flex flex-col gap-5 p-5 bg-white rounded-2xl shadow-solid ${figtree.className} text-gray-950 ` +
+        `flex flex-col gap-5 p-6 bg-white rounded-2xl shadow-solid ${figtree.className} text-gray-950 ` +
         `border max-w-[380px] border-gray-950 shadow-gray-950`
       }
     >
@@ -37,10 +37,10 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
           {post.category}
         </div>
         <span className="text-sm">Published {date}</span>
-        <span className="font-bold text-2xl hover:text-yellow">
+        <span className="font-bold text-2xl hover:text-yellow mb-1">
           <Link href="#">{post.title}</Link>
         </span>
-        <span className="text-gray-500">{post.description}</span>
+        <span className="text-gray-500 mb-2">{post.description}</span>
         <div className="flex items-center gap-2">
           <Image
             src={post.author.avatar}
