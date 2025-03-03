@@ -6,6 +6,12 @@ import NavBar from "@/components/shortly/nav/NavBar";
 import Footer from "@/components/shortly/footer/Footer";
 import CallToActionSection from "@/components/shortly/CallToActionSection";
 
+import illustrationWorking from "@/public/images/shortly/illustration-working.svg";
+import iconBrandRecognition from "@/public/images/shortly/icon-brand-recognition.svg";
+import iconDetailedRecords from "@/public/images/shortly/icon-detailed-records.svg";
+import iconFullyCustomizable from "@/public/images/shortly/icon-fully-customizable.svg";
+import Image from "next/image";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -26,8 +32,8 @@ function ShortlySitePage() {
               More than just shorter links
             </h1>
             <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-              Build your brand's recognition and get detailed insights on how
-              your links are performing.
+              Build your brand&apos;s recognition and get detailed insights on
+              how your links are performing.
             </p>
             <div className="mx-auto lg:mx-0">
               <a
@@ -41,7 +47,7 @@ function ShortlySitePage() {
 
           {/* Image */}
           <div className="mb-24 mx-auto md:w-[32rem] lg:mb-0 lg:w-1/2">
-            <img src="/images/shortly/illustration-working.svg" alt="" />
+            <Image src={illustrationWorking} alt="" />
           </div>
         </div>
       </section>
@@ -143,16 +149,16 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
-                <img src="/images/shortly/icon-brand-recognition.svg" alt="" />
+                <Image src={iconBrandRecognition} alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
               Brand Recognition
             </h5>
             <p className="text-center text-gray-400 md:text-left">
-              Boost your brand recognition with each click. Generic links don't
-              mean a thing. Branded links help instil confidence in your
-              content.
+              Boost your brand recognition with each click. Generic links
+              don&apos;t mean a thing. Branded links help instil confidence in
+              your content.
             </p>
           </div>
 
@@ -162,7 +168,7 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
-                <img src="/images/shortly/icon-detailed-records.svg" alt="" />
+                <Image src={iconDetailedRecords} alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -181,7 +187,7 @@ function ShortlySitePage() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
               {/* Image Container for Background & Center */}
               <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-very-dark-violet">
-                <img src="/images/shortly/icon-fully-customizable.svg" alt="" />
+                <Image src={iconFullyCustomizable} alt="" />
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
