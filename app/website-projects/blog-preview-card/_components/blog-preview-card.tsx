@@ -32,8 +32,8 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
         alt="Blog post thumbnail image"
       />
 
-      <div className="flex flex-col gap-3">
-        <div className="font-bold bg-yellow rounded-sm p-3 py-1 w-min">
+      <div className="flex flex-col gap-3 mt-2">
+        <div className="font-bold bg-yellow rounded-sm p-3 py-1 w-min text-sm">
           {post.category}
         </div>
         <span className="text-sm">Published {date}</span>
@@ -48,7 +48,7 @@ export default function BlogPreviewCard({ post }: BlogPreviewCardProps) {
             width={32}
             height={32}
           />
-          <span className="font-bold">{post.author.name}</span>
+          <span className="font-bold text-sm">{post.author.name}</span>
         </div>
       </div>
     </div>
