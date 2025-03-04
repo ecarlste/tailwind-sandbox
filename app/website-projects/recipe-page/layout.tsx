@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SocialLinksProfileLayout({
+export default function RecipePageLayout({
   children,
 }: {
   children: React.ReactNode;
