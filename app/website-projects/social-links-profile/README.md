@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution: [Frontend Mentor Solutions](https://www.frontendmentor.io/profile/ecarlste/solutions)
-- Live Site: [QR Code Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/blog-preview-card)
+- Live Site: [QR Code Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/social-links-profile)
 
 ## My process
 

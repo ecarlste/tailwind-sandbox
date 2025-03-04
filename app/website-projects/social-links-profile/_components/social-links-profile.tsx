@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SocialLinksButton from "./social-links-button";
+import SocialLinkButton from "./social-link-button";
 import { Inter } from "next/font/google";
 import SocialLinksProfileData from "../social-links-profile-data";
 
@@ -42,7 +42,7 @@ export default function SocialLinksProfile({ data }: SocialLinksProfileProps) {
 
       <div className="flex flex-col gap-[16px] w-full">
         {data.socialLinks.map((socialLink) => (
-          <SocialLinksButton key={socialLink}>{socialLink}</SocialLinksButton>
+          <SocialLinkButton key={socialLink}>{socialLink}</SocialLinkButton>
         ))}
       </div>
     </div>

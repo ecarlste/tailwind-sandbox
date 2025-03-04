@@ -2,9 +2,7 @@ type SocialLinksButtonProps = {
   children: string;
 };
 
-export default function SocialLinksButton({
-  children,
-}: SocialLinksButtonProps) {
+export default function SocialLinkButton({ children }: SocialLinksButtonProps) {
   return (
     <div
       className={
