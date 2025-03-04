@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SocialLinkButton from "./social-link-button";
 import { Inter } from "next/font/google";
-import SocialLinksProfileData from "../social-links-profile-data";
+import { SocialLinksProfileData } from "../social-links-profile-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,11 +15,10 @@ type SocialLinksProfileProps = {
 export default function SocialLinksProfile({ data }: SocialLinksProfileProps) {
   return (
     <div
-      className={
-        "w-[327px] md:w-[384px] bg-grey-800 rounded-xl flex flex-col p-[24px] md:p-[40px] items-center gap-[24px] " +
-        "text-white " +
-        `${inter.className}`
-      }
+      className={`
+        w-[327px] md:w-[384px] bg-grey-800 rounded-xl flex flex-col p-[24px] md:p-[40px] items-center gap-[24px]
+        text-white ${inter.className}
+      `}
     >
       <Image
         src={data.avatar}

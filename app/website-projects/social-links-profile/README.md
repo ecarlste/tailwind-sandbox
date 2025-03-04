@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution: [Frontend Mentor Solutions](https://www.frontendmentor.io/profile/ecarlste/solutions)
-- Live Site: [QR Code Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/social-links-profile)
+- Live Site: [Social Links Profile Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/social-links-profile)
 
 ## My process
 
@@ -44,11 +44,11 @@ Users should be able to:
 
 ### What I learned
 
-I used Figma for the first time with this challenge. It took all of the guess work about the layout out of the equation. I could look at details like what the actual corner radius was on corners and then use the appropriate tailwind classes to achieve the exact look.
+I used Figma for the first time with this challenge. It took the guess work about the layout out of the equation. I could look at details like what the actual corner radius was on corners and then use the appropriate tailwind classes to achieve the exact look.
 
 ### Continued development
 
-At some point I'll likely add Next.js `Link` elements in the `SocialLinkButton` component so they are usable for sending the user to the appropriate websites. Having the profile picture linked to the user's profile on the hosting site would be nice too so providing and optional link might be helpful.
+At some point, I'll likely add Next.js `Link` elements in the `SocialLinkButton` component so they are usable for sending the user to the appropriate websites. Having the profile picture linked to the user's profile on the hosting site would be nice, too so providing and optional link might be helpful.
 
 ## Author
 
