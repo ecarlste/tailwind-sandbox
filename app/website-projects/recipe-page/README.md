@@ -41,7 +41,7 @@ I ran into an issue where my responsive design was showing correctly for mobile 
 
 I eventually realized that it was because I did not have a default set, because some settings were not needed when I was only testing for mobile at 375px. An example of this is when using `sm:rounded-3xl` for screens larger than a phone. If I started on the page looking at it in mobile design, the corners were not rounded, but when I scaled up and then back down the corners would remain longer than I expected.
 
-Once set set the style to `rounded-none sm:rounded-3xl` it responded correctly for both mobile as well as larger screens and the breakpoint was hit correctly when scaling up and down.
+Once I set the style to `rounded-none sm:rounded-3xl` it responded correctly for both mobile as well as larger screens and the breakpoint was hit correctly when scaling up and down.
 
 ### Continued development
 
