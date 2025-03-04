@@ -11,6 +11,7 @@ import testimonialGridSiteScreenshotDesktop from "@/public/images/testimonial-gr
 import qrCodeSiteScreenshotDesktop from "@/public/images/qr-code-website-screenshot-desktop.png";
 import blogPreviewCardSiteScreenshotDesktop from "@/public/images/blog-preview-card-website-screenshot-desktop.png";
 import socialLinksProfileSiteScreenshotDesktop from "@/public/images/social-links-profile-website-screenshot-desktop.png";
+import recipePageSiteScreenshotDesktop from "@/public/images/recipe-page-website-screenshot-desktop.png";
 
 export default function HomePage() {
   return (
@@ -66,6 +67,12 @@ export default function HomePage() {
           linkUrl="website-projects/social-links-profile"
           image={socialLinksProfileSiteScreenshotDesktop}
           imageAlt="Social Links Profile Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/recipe-page"
+          image={recipePageSiteScreenshotDesktop}
+          imageAlt="Recipe Page Website"
         />
       </div>
     </>
