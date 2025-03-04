@@ -12,9 +12,15 @@ import { recipeNutruitionValues } from "../_data/recipe-nutrition-values";
 
 export default function Recipe() {
   return (
-    <div className="w-full bg-white">
-      <Image src={topImage} alt="Omelette" />
-      <div className="flex flex-col px-[32px] py-[40px] gap-[32px]">
+    <div className="w-full bg-white max-w-[768px] rounded-none sm:rounded-3xl">
+      <div className="p-0 sm:pt-[40px] sm:px-[40px]">
+        <Image
+          className="rounded-none sm:rounded-xl"
+          src={topImage}
+          alt="Omelette"
+        />
+      </div>
+      <div className="flex flex-col px-[32px] py-[40px] gap-[32px] sm:px-[40px]">
         <RecipeTitleSection />
         <RecipePrepSection />
         <RecipeIngredientsSection />
