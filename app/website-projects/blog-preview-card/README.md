@@ -57,5 +57,3 @@ I think the biggest thing that I felt like I was missing here was some UI tests 
 - GitHub - [ecarlste](https://github.com/ecarlste)
 - Frontend Mentor - [@ecarlste](https://www.frontendmentor.io/profile/ecarlste)
 - LinkedIn - [Erik Carlsten](https://www.linkedin.com/in/erikcarlsten)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

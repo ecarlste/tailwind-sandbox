@@ -10,6 +10,7 @@ import shortlySiteScreenshotDesktop from "@/public/images/shortly-website-screen
 import testimonialGridSiteScreenshotDesktop from "@/public/images/testimonial-grid-website-screenshot-desktop.png";
 import qrCodeSiteScreenshotDesktop from "@/public/images/qr-code-website-screenshot-desktop.png";
 import blogPreviewCardSiteScreenshotDesktop from "@/public/images/blog-preview-card-website-screenshot-desktop.png";
+import socialLinksProfileSiteScreenshotDesktop from "@/public/images/social-links-profile-website-screenshot-desktop.png";
 
 export default function HomePage() {
   return (
@@ -59,6 +60,12 @@ export default function HomePage() {
           linkUrl="website-projects/blog-preview-card"
           image={blogPreviewCardSiteScreenshotDesktop}
           imageAlt="Blog Preview Card Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/social-links-profile"
+          image={socialLinksProfileSiteScreenshotDesktop}
+          imageAlt="Social Links Profile Website"
         />
       </div>
     </>
