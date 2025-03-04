@@ -8,7 +8,7 @@ import SeparationLine from "./separation-line";
 import RecipeInstructionsSection from "./recipe-instructions-section";
 import { instructions } from "../_data/recipe-instructions";
 import NutritionSection from "./nutrition-section";
-import { recipeNutruitionValues } from "../_data/recipe-nutrition-values";
+import { recipeNutritionValues } from "../_data/recipe-nutrition-values";
 
 export default function Recipe() {
   return (
@@ -27,7 +27,7 @@ export default function Recipe() {
         <SeparationLine />
         <RecipeInstructionsSection instructions={instructions} />
         <SeparationLine />
-        <NutritionSection nutritionValues={recipeNutruitionValues} />
+        <NutritionSection nutritionValues={recipeNutritionValues} />
       </div>
     </div>
   );
