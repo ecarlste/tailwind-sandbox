@@ -26,4 +26,8 @@ export const instructions: RecipeInstructionType[] = [
     description:
       "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
   },
+  {
+    summary: "Enjoy",
+    description: "Serve hot, with additional salt and pepper if needed.",
+  },
 ];
