@@ -49,7 +49,9 @@ export default function ProductPreviewCard({
             width={18}
             height={18}
           />
-          <div className="text-white">Add to cart</div>
+          <div className="font-montserrat text-white text-sm font-bold leading-[110%]">
+            Add to cart
+          </div>
         </button>
       </div>
     </div>
