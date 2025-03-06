@@ -9,7 +9,7 @@ export default function ProductPreviewCard({
   product,
 }: ProductPreviewCardProps) {
   return (
-    <div className="flex flex-col max-w-[350px] bg-white rounded-lg w-full sm:flex-row sm:max-w-[600px]">
+    <article className="flex flex-col max-w-[350px] bg-white rounded-lg w-full sm:flex-row sm:max-w-[600px]">
       <div
         className={`
           w-full h-[342px] bg-[url(/images/product-preview-card/image-product-desktop.jpg)] bg-no-repeat
@@ -54,6 +54,6 @@ export default function ProductPreviewCard({
           </div>
         </button>
       </div>
-    </div>
+    </article>
   );
 }
