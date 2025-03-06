@@ -14,7 +14,7 @@ const product: Product = {
 
 export default function ProductPreviewCardSitePage() {
   return (
-    <div className="flex items-center justify-center bg-cream min-h-lvh pt-20 pb-[172px] px-3 pt">
+    <div className="flex items-center justify-center bg-cream min-h-lvh pt-20 pb-[172px] px-3 p sm:p-0t">
       <ProductPreviewCard product={product} />
     </div>
   );
