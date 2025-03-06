@@ -49,9 +49,9 @@ export default function ProductPreviewCard({
             width={15}
             height={16}
           />
-          <div className="font-montserrat text-white text-sm font-bold leading-[110%]">
+          <span className="font-montserrat text-white text-sm font-bold leading-[110%]">
             Add to Cart
-          </div>
+          </span>
         </button>
       </div>
     </article>
