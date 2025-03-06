@@ -46,11 +46,11 @@ export default function ProductPreviewCard({
           <Image
             src={"/images/product-preview-card/icon-cart.svg"}
             alt={"Cart icon"}
-            width={18}
-            height={18}
+            width={15}
+            height={16}
           />
           <div className="font-montserrat text-white text-sm font-bold leading-[110%]">
-            Add to cart
+            Add to Cart
           </div>
         </button>
       </div>
