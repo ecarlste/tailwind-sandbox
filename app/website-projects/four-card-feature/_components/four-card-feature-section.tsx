@@ -33,6 +33,8 @@ const featureCardDataList = [
 export default function FourCardFeatureSection() {
   return (
     <section className="flex flex-col justify-center items-center gap-8 xl:flex-row">
+      <h2 className="sr-only">Feature Highlights</h2>
+
       <FeatureCard data={featureCardDataList[0]} accentColor="bg-cyan" />
 
       <div className="flex flex-col gap-8 md:flex-row xl:flex-col">
