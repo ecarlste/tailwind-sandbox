@@ -24,7 +24,7 @@ export default function FeatureCard({
           <span className="font-poppins text-xl font-semibold leading-[135%]">
             {data.title}
           </span>
-          <span className="text-lg text-grey-400 text-[13px] leading-[160%] tracking-[0.09px]">
+          <span className="text-grey-400 text-[13px] leading-[160%] tracking-[0.09px]">
             {data.description}
           </span>
         </div>
