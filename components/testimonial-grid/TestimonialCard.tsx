@@ -39,7 +39,7 @@ function TestimonialCard(props: {
             className="w-10 h-10 rounded-full ring-2 ring-purple-300"
           />
           <div className="text-sm">
-            <h4 className="opacity-90">{data.name}</h4>
+            <h2 className="opacity-90">{data.name}</h2>
             <p className="opacity-50">Verified Graduate</p>
           </div>
         </div>
