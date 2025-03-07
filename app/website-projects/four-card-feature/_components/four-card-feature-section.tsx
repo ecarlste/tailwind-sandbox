@@ -40,13 +40,13 @@ const featureCardDataList = [
 export default function FourCardFeatureSection() {
   return (
     <section className="flex flex-col justify-center items-center gap-8 xl:flex-row">
-      <FeatureCard data={featureCardDataList[0]} borderColor="bg-cyan" />
+      <FeatureCard data={featureCardDataList[0]} accentColor="bg-cyan" />
 
       <div className="flex flex-col gap-8 md:flex-row xl:flex-col">
-        <FeatureCard data={featureCardDataList[1]} borderColor="bg-red" />
-        <FeatureCard data={featureCardDataList[2]} borderColor="bg-orange" />
+        <FeatureCard data={featureCardDataList[1]} accentColor="bg-red" />
+        <FeatureCard data={featureCardDataList[2]} accentColor="bg-orange" />
       </div>
-      <FeatureCard data={featureCardDataList[3]} borderColor="bg-blue" />
+      <FeatureCard data={featureCardDataList[3]} accentColor="bg-blue" />
     </section>
   );
 }

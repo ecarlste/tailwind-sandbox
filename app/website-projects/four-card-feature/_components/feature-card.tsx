@@ -1,23 +1,25 @@
 import Image from "next/image";
 import { FeatureCardData } from "./four-card-feature-section";
 
-type borderColor = "bg-red" | "bg-cyan" | "bg-orange" | "bg-blue";
+type AccentColorClass = "bg-red" | "bg-cyan" | "bg-orange" | "bg-blue";
 
 type FeatureCardProps = {
   data: FeatureCardData;
-  borderColor?: borderColor;
+  accentColor?: AccentColorClass;
 };
 
 export default function FeatureCard({
   data,
-  borderColor = "bg-red",
+  accentColor = "bg-red",
 }: FeatureCardProps) {
   return (
     <div
-      className={`flex flex-col shadow-custom rounded-lg w-full
-         max-w-[314px] overflow-hidden md:w-[314px]`}
+      className={`
+        flex flex-col shadow-custom rounded-lg w-full
+         max-w-[314px] overflow-hidden md:w-[314px]
+      `}
     >
-      <div className={`${borderColor} h-1 w-full`} />
+      <div className={`${accentColor} h-1 w-full`} />
 
       <div className="flex flex-col p-8 gap-8 items-end">
         <div className="flex flex-col gap-1.5">
