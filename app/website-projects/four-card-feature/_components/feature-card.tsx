@@ -16,7 +16,7 @@ export default function FeatureCard({
     <div
       className={`
         flex flex-col shadow-custom rounded-lg w-full
-         max-w-[314px] overflow-hidden md:w-[314px]
+        max-w-[314px] overflow-hidden md:w-[314px]
       `}
     >
       <div className={`${accentColor} h-1 w-full`} />
@@ -36,6 +36,8 @@ export default function FeatureCard({
             src={data.icon}
             alt={data.title}
             className="w-[64px] h-[64px]"
+            width={64}
+            height={64}
           />
         </div>
       </div>
