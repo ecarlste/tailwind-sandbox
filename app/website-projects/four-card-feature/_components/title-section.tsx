@@ -22,7 +22,7 @@ export default function TitleSection({
         `}
       >
         <span className="font-[275]">{title1}</span>
-        <span className="font-semibold">{title2}</span>
+        <h1 className="font-semibold">{title2}</h1>
       </div>
 
       {/* Description */}
