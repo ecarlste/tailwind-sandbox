@@ -10,15 +10,19 @@ export default function TitleSection({
   description,
 }: TitleSectionProps) {
   return (
-    <section className="flex flex-col items-center gap-4 font-poppins text-grey-500 max-w-[316px] md:max-w-[540px] w-full">
+    <section
+      className={`
+        flex flex-col items-center gap-4 font-poppins text-grey-500 max-w-[316px] w-full md:max-w-[540px]
+    `}
+    >
       {/* Title */}
-      <div className="flex flex-col items-center text-center self-stretch">
-        <span className="text-2xl font-[275] leading-[140%] tracking-[0.25px]">
-          {title1}
-        </span>
-        <span className="text-2xl leading-[140%] tracking-[0.25px] font-semibold">
-          {title2}
-        </span>
+      <div
+        className={`
+          flex flex-col items-center text-center self-stretch text-2xl leading-[140%] tracking-[0.25px] md:text-4xl
+        `}
+      >
+        <span className="font-[275]">{title1}</span>
+        <span className="font-semibold">{title2}</span>
       </div>
 
       {/* Description */}

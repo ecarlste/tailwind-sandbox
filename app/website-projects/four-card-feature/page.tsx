@@ -10,7 +10,11 @@ const titleSectionData = {
 
 export default function FourCardFeatureSitePage() {
   return (
-    <div className="flex flex-col gap-[60px] w-full max-w-[350px] items-center md:max-w-[768px] xl:max-w-[1280px]">
+    <div
+      className={`
+        flex flex-col gap-[60px] w-full max-w-[350px] items-center md:max-w-[768px] md:gap-[74px] xl:max-w-[1280px] 
+      `}
+    >
       <TitleSection {...titleSectionData} />
       <FourCardFeatureSection />
     </div>

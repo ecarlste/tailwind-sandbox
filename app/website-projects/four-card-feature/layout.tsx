@@ -15,7 +15,7 @@ export default function FourCardFeatureSiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex px-[30px] pt-14 pb-[46px] justify-center">
+    <main className="flex px-[30px] pt-14 pb-[46px] justify-center md:py-20 xl:py-[102px]">
       {children}
     </main>
   );
