@@ -16,13 +16,13 @@ export default function FeatureCard({
     <div
       className={`
         flex flex-col shadow-custom rounded-lg w-full
-        max-w-[314px] overflow-hidden md:w-[314px]
+        max-w-[314px] overflow-hidden md:w-[314px] xl:max-w-[350px] xl:w-[350px] 
       `}
     >
       <div className={`${accentColor} h-1 w-full`} />
 
       <div className="flex flex-col p-8 gap-8 items-end">
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1.5 w-full">
           <span className="font-poppins text-xl font-semibold leading-[135%]">
             {data.title}
           </span>
