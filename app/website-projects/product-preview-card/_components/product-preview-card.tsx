@@ -33,7 +33,7 @@ export default function ProductPreviewCard({
           <span className="font-fraunces text-[32px] font-bold text-green-500 leading-[100%]">
             ${product.price.current}
           </span>
-          <span className="font-montserrat text-[13px] font-medium leading-[120%] line-through">
+          <span className="font-montserrat text-[13px] font-medium text-grey leading-[120%] line-through">
             ${product.price.original}
           </span>
         </div>
