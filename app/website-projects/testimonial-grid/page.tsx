@@ -58,6 +58,7 @@ function TestimonialGridSitePage() {
     >
       {/* Global Container */}
       <div className="container mx-auto max-w-7xl p-2 md:p-10">
+        <h1 className="sr-only">Testimonials</h1>
         <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
           <TestimonialCard
             data={testimonialCardsData[0]}
