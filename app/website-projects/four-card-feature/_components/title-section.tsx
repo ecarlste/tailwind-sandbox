@@ -16,7 +16,7 @@ export default function TitleSection({
         <span className="text-2xl font-[275] leading-[140%] tracking-[0.25px]">
           {title1}
         </span>
-        <span className="text-2xl leading-[140%] tracking=[0.25px] font-semibold">
+        <span className="text-2xl leading-[140%] tracking-[0.25px] font-semibold">
           {title2}
         </span>
       </div>
