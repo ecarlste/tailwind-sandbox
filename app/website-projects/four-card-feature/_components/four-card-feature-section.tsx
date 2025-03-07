@@ -1,16 +1,9 @@
-import { StaticImageData } from "next/image";
 import FeatureCard from "./feature-card";
 
 import iconSupervisor from "@/public/images/four-card-feature/icon-supervisor.svg";
 import iconTeamBuilder from "@/public/images/four-card-feature/icon-team-builder.svg";
 import iconKarma from "@/public/images/four-card-feature/icon-karma.svg";
 import iconCalculator from "@/public/images/four-card-feature/icon-calculator.svg";
-
-export type FeatureCardData = {
-  title: string;
-  description: string;
-  icon: StaticImageData;
-};
 
 const featureCardDataList = [
   {

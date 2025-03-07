@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FeatureCardData } from "./four-card-feature-section";
+import { FeatureCardData } from "../feature-card-data";
 
 type AccentColorClass = "bg-red" | "bg-cyan" | "bg-orange" | "bg-blue";
 
