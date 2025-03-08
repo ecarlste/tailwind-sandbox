@@ -19,16 +19,6 @@
 }
 
 @layer utilities {
-  .bg-footer-cta-mobile {
-    background: url("/images/meet-landing-page/mobile/image-footer.jpg")
-      lightgray 50% / cover no-repeat;
-  }
-
-  .bg-footer-cta-tablet {
-    background: url("/images/meet-landing-page/tablet/image-footer.jpg")
-      lightgray 50% / cover no-repeat;
-  }
-
   .text-mobile-preset-1 {
     font-family: var(--font-red-hat-display);
     font-size: 40px;
