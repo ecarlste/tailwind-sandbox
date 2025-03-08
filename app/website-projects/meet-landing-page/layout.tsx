@@ -15,7 +15,7 @@ export default function MeetLandingPageSiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex flex-col justify-center items-center font-red-hat-display">
+    <main className="flex flex-col items-center font-red-hat-display">
       {children}
     </main>
   );
