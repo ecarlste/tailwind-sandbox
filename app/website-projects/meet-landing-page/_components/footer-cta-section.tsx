@@ -11,7 +11,7 @@ export default function FooterCtaSection() {
           relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-cover bg-no-repeat bg-center
           bg-[url('/images/meet-landing-page/mobile/image-footer.jpg')]
           md:bg-[url('/images/meet-landing-page/tablet/image-footer.jpg')]
-          lg:bg-[url('/images/meet-landing-page/desktop/image-footer.jpg')]
+          xl:bg-[url('/images/meet-landing-page/desktop/image-footer.jpg')]
         `}
       >
         {/* overlay */}

@@ -26,6 +26,10 @@
     letter-spacing: 0px;
     font-weight: 900;
     font-feature-settings: "liga" off, "clig" off;
+
+    @variant xl {
+      font-size: 64px;
+    }
   }
 
   .text-mobile-preset-2 {

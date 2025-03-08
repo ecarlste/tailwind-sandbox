@@ -8,7 +8,12 @@ export default function HeroSection() {
   return (
     <section className="p-8 pt-16">
       {/* combined */}
-      <div className="flex flex-col max-w-[305px] justify-center items-center gap-12 self-stretch md:max-w-[680px]">
+      <div
+        className={`
+          flex flex-col max-w-[305px] justify-center items-center gap-12 self-stretch md:max-w-[680px] xl:flex-row
+          xl:max-w-none
+        `}
+      >
         {/* combined-image */}
         <div className="flex justify-center items-center self-stretch gap-[16.9px] md:gap-8">
           <Image
@@ -19,7 +24,7 @@ export default function HeroSection() {
           <Image
             src={imageHeroRight}
             alt="Hero Images Right"
-            className="shrink-0 h-40 w-[208.053px] md:h-[303px] md:w-[394px]"
+            className="shrink-0 h-40 w-[208.053px] md:h-[303px] md:w-[394px] xl:hidden"
           />
         </div>
 
@@ -41,6 +46,12 @@ export default function HeroSection() {
             <Button variant="secondary">What is it?</Button>
           </div>
         </div>
+
+        <Image
+          src={imageHeroRight}
+          alt="Hero Images Right"
+          className="hidden shrink-0 h-40 w-[208.053px] md:h-[303px] md:w-[394px] xl:block"
+        />
       </div>
     </section>
   );
