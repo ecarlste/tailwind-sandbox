@@ -21,11 +21,13 @@ export default function MainContentSection() {
               src={imageWomanInVideocall}
               alt="Woman in Videocall"
               className="h-36 flex-1 rounded-lg"
+              placeholder="blur"
             />
             <Image
               src={imageWomenVideochatting}
               alt="Women Videochatting"
               className="h-36 flex-1 rounded-lg"
+              placeholder="blur"
             />
           </div>
 
@@ -35,11 +37,13 @@ export default function MainContentSection() {
               src={imageManTexting}
               alt="Man Texting"
               className="h-36 flex-1 rounded-lg"
+              placeholder="blur"
             />
             <Image
               src={imageMenInMeeting}
               alt="Men In Meeting"
               className="h-36 flex-1 rounded-lg"
+              placeholder="blur"
             />
           </div>
         </div>
