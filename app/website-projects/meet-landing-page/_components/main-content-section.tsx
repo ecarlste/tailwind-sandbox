@@ -55,9 +55,9 @@ export default function MainContentSection() {
             <span className="text-cyan-600 text-mobile-preset-3 uppercase">
               Built for modern use
             </span>
-            <h1 className="text-mobile-preset-2 text-center text-slate-900">
+            <h2 className="text-mobile-preset-2 text-center text-slate-900">
               Smarter meetings, all in one place
-            </h1>
+            </h2>
           </div>
           <p className="self-stretch text-tablet-preset-4 text-center text-slate-600">
             Send messages, share files, show your screen, and record your
