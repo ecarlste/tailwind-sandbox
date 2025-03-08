@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Button from "./button";
 
+import imageHeroLeft from "/public/images/meet-landing-page/desktop/image-hero-left.png";
+import imageHeroRight from "/public/images/meet-landing-page/desktop/image-hero-right.png";
+
 export default function HeroSection() {
   return (
     <section className="p-8 pt-16">
@@ -9,16 +12,14 @@ export default function HeroSection() {
         {/* combined-image */}
         <div className="flex h-40 justify-center items-center self-stretch gap-[16.9px]">
           <Image
-            src="/images/meet-landing-page/desktop/image-hero-left.png"
+            src={imageHeroLeft}
             alt="Hero Images Left"
-            width={208.053}
             height={160}
             className="shrink-0"
           />
           <Image
-            src="/images/meet-landing-page/desktop/image-hero-right.png"
+            src={imageHeroRight}
             alt="Hero Images Right"
-            width={208.053}
             height={160}
             className="shrink-0"
           />
