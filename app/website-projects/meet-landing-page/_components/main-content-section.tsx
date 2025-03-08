@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NumberHeading from "./number-heading";
 
 import imageWomanInVideocall from "@/public/images/meet-landing-page/desktop/image-woman-in-videocall.jpg";
