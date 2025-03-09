@@ -13,6 +13,8 @@ import blogPreviewCardSiteScreenshotDesktop from "@/public/images/blog-preview-c
 import socialLinksProfileSiteScreenshotDesktop from "@/public/images/social-links-profile-website-screenshot-desktop.png";
 import recipePageSiteScreenshotDesktop from "@/public/images/recipe-page-website-screenshot-desktop.png";
 import productPreviewCardSiteScreenshotDesktop from "@/public/images/product-preview-card-website-screenshot-desktop.png";
+import fourCardFeatureSiteScreenshotDesktop from "@/public/images/four-card-feature/screenshot-desktop.png";
+import meetLandingPageSiteScreenshot from "@/public/images/meet-landing-page/screenshot-desktop.png";
 
 export default function HomePage() {
   return (
@@ -80,6 +82,18 @@ export default function HomePage() {
           linkUrl="website-projects/product-preview-card"
           image={productPreviewCardSiteScreenshotDesktop}
           imageAlt="Product Preview Card Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/four-card-feature"
+          image={fourCardFeatureSiteScreenshotDesktop}
+          imageAlt="Four Card Feature Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/meet-landing-page"
+          image={meetLandingPageSiteScreenshot}
+          imageAlt="Meet Landing Page Website"
         />
       </div>
     </>
