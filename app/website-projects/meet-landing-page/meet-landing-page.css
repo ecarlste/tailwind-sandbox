@@ -4,9 +4,11 @@
 
 @theme {
   --color-cyan-300: hsl(192, 90%, 77%);
+  --color-cyan-400: hsl(191, 56%, 64%);
   --color-cyan-600: hsl(192, 37%, 48%);
 
   --color-purple-300: hsl(268, 100%, 86%);
+  --color-purple-400: hsl(267, 55%, 71%);
   --color-purple-600: hsl(268, 34%, 53%);
 
   --color-slate-300: hsl(240, 18%, 85%);
