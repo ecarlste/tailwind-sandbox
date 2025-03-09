@@ -3,7 +3,7 @@ import HeroImage from "./hero-image";
 
 export default function HeroSection() {
   return (
-    <section className="p-8 pt-16 xl:p-16 xl:py-20">
+    <section className="p-8 pt-16 xl:p-16 xl:px-20">
       {/* combined */}
       <div
         className={`
