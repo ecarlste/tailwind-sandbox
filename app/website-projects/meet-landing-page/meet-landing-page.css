@@ -19,7 +19,22 @@
 }
 
 @layer utilities {
-  .text-mobile-preset-1 {
+  .bg-footer-cta {
+    background: url("/images/meet-landing-page/mobile/image-footer.jpg")
+      lightgray 50% / cover no-repeat;
+
+    @variant md {
+      background: url("/images/meet-landing-page/tablet/image-footer.jpg")
+        lightgray 50% / cover no-repeat;
+    }
+
+    @variant xl {
+      background: url("/images/meet-landing-page/desktop/image-footer.jpg")
+        lightgray 50% / cover no-repeat;
+    }
+  }
+
+  .text-preset-1 {
     font-family: var(--font-red-hat-display);
     font-size: 40px;
     line-height: 110%;
@@ -32,34 +47,46 @@
     }
   }
 
-  .text-mobile-preset-2 {
+  .text-preset-2 {
     font-family: var(--font-red-hat-display);
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0px;
     font-weight: 900;
     font-feature-settings: "liga" off, "clig" off;
+
+    @variant xl {
+      font-size: 40px;
+    }
   }
 
-  .text-mobile-preset-3 {
+  .text-preset-3 {
     font-family: var(--font-red-hat-display);
     font-size: 12px;
     line-height: 110%;
     letter-spacing: 4px;
     font-weight: 900;
     font-feature-settings: "liga" off, "clig" off;
+
+    @variant xl {
+      font-size: 16px;
+    }
   }
 
-  .text-tablet-preset-4 {
+  .text-preset-4 {
     font-family: var(--font-red-hat-display);
     font-size: 16px;
-    line-height: 24px;
+    line-height: 150%;
     letter-spacing: 0px;
     font-weight: 500;
     font-feature-settings: "liga" off, "clig" off;
+
+    @variant xl {
+      font-size: 18px;
+    }
   }
 
-  .text-desktop-preset-5 {
+  .text-preset-5 {
     font-family: var(--font-red-hat-display);
     font-size: 16px;
     line-height: 24px;

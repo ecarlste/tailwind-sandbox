@@ -8,10 +8,7 @@ export default function FooterCtaSection() {
       {/* hero */}
       <div
         className={`
-          relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-cover bg-no-repeat bg-center
-          bg-[url('/images/meet-landing-page/mobile/image-footer.jpg')]
-          md:bg-[url('/images/meet-landing-page/tablet/image-footer.jpg')]
-          xl:bg-[url('/images/meet-landing-page/desktop/image-footer.jpg')]
+          relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-footer-cta
         `}
       >
         {/* overlay */}
@@ -19,10 +16,10 @@ export default function FooterCtaSection() {
 
         {/* content */}
         <div className="relative flex flex-col max-w-[504px] items-center gap-6 mx-auto">
-          <h2 className="text-mobile-preset-2 text-white text-center">
+          <h2 className="text-preset-2 text-white text-center">
             Experience more together
           </h2>
-          <p className="text-tablet-preset-4 text-white text-center">
+          <p className="text-preset-4 text-white text-center">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
