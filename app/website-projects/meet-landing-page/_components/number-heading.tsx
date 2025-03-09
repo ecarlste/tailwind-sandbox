@@ -5,7 +5,7 @@ export default function NumberHeading({ num }: { num: number }) {
       <div
         className={`
           flex flex-col h-14 w-14 justify-center items-center bg-white border-1 border-slate-300 border-solid
-          rounded-full text-desktop-preset-5
+          rounded-full text-preset-5
         `}
       >
         {String(num).padStart(2, "0")}

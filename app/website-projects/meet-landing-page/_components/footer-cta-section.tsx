@@ -8,30 +8,34 @@ export default function FooterCtaSection() {
       {/* hero */}
       <div
         className={`
-          relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-cover bg-no-repeat bg-center
-          bg-[url('/images/meet-landing-page/mobile/image-footer.jpg')]
-          md:bg-[url('/images/meet-landing-page/tablet/image-footer.jpg')]
-          lg:bg-[url('/images/meet-landing-page/desktop/image-footer.jpg')]
+          relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-footer-cta xl:py-28 xl:px-20
         `}
       >
         {/* overlay */}
         <div className="absolute inset-0 bg-cyan-600 opacity-85" />
 
         {/* content */}
-        <div className="relative flex flex-col max-w-[504px] items-center gap-6 mx-auto">
-          <h2 className="text-mobile-preset-2 text-white text-center">
+        <div
+          className={`
+            relative flex flex-col max-w-[504px] items-center gap-6 mx-auto xl:flex-row xl:max-w-[1120px]
+            xl:items-start xl:gap-8 xl:justify-center
+          `}
+        >
+          <h2 className="text-preset-2 text-white text-center xl:text-left xl:flex-1">
             Experience more together
           </h2>
-          <p className="text-tablet-preset-4 text-white text-center">
+          <p className="text-preset-4 text-white text-center xl:text-left xl:w-[355px]">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
-          <Button variant="secondary">
-            <div className="flex items-start gap-1">
-              Download
-              <span className="text-purple-300">v1.3</span>
-            </div>
-          </Button>
+          <div className="xl:flex xl:w-64 xl:justify-end">
+            <Button variant="secondary">
+              <div className="flex items-start gap-1">
+                Download
+                <span className="text-purple-300">v1.3</span>
+              </div>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
