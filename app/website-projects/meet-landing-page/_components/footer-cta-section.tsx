@@ -30,10 +30,10 @@ export default function FooterCtaSection() {
           </p>
           <div className="xl:flex xl:w-64 xl:justify-end">
             <Button variant="secondary">
-              <div className="flex items-start gap-1">
+              <span className="flex items-start gap-1">
                 Download
                 <span className="text-purple-300">v1.3</span>
-              </div>
+              </span>
             </Button>
           </div>
         </div>

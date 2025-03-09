@@ -32,9 +32,9 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
             <Button>
-              <div className="flex flex-start gap-1">
+              <span className="flex flex-start gap-1">
                 Download<span className="text-cyan-300">v1.3</span>
-              </div>
+              </span>
             </Button>
             <Button variant="secondary">What is it?</Button>
           </div>
