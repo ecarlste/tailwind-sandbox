@@ -4,11 +4,11 @@ import NumberHeading from "./number-heading";
 export default function FooterCtaSection() {
   return (
     <section className="flex flex-col justify-center items-center w-full">
-      <NumberHeading num={2} />
+      <NumberHeading num={2} className="relative z-20" />
       {/* hero */}
       <div
         className={`
-          relative z-[-10] flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-footer-cta xl:py-28 xl:px-20
+          relative flex flex-col px-8 py-16 items-center gap-16 -mt-7 w-full bg-footer-cta xl:py-28 xl:px-20
         `}
       >
         {/* overlay */}
@@ -17,7 +17,7 @@ export default function FooterCtaSection() {
         {/* content */}
         <div
           className={`
-            relative flex flex-col max-w-[504px] items-center gap-6 mx-auto xl:flex-row xl:max-w-[1120px]
+            relative z-10 flex flex-col max-w-[504px] items-center gap-6 mx-auto xl:flex-row xl:max-w-[1120px]
             xl:items-start xl:gap-8 xl:justify-center
           `}
         >
