@@ -18,7 +18,7 @@ export default function HeroImage({ variant, className = "" }: HeroImageProps) {
     <Image
       src={imageSrcMap[variant]}
       alt={`Hero images ${variant}`}
-      className={`shrink-0 h-40 w-[208.053px] md:h-[303px] md:w-[394px] ${className}`}
+      className={`shrink-0 h-40 w-[208.053px] md:h-[303px] md:w-[394px] xl:min-w-[394px] ${className}`}
     />
   );
 }

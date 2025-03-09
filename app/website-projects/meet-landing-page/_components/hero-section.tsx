@@ -17,7 +17,9 @@ export default function HeroSection() {
           <HeroImage variant="right" />
         </div>
 
-        <HeroImage variant="left" className="hidden xl:block" />
+        <div className="hidden pr-24 pb-14 xl:block">
+          <HeroImage variant="left" />
+        </div>
 
         {/* text-content */}
         <div className="flex flex-col items-center gap-6 w-full md:max-w-[448px] xl:min-w-[448px]">
@@ -38,7 +40,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <HeroImage variant="right" className="hidden xl:block" />
+        <div className="hidden pl-24 pt-14 xl:block">
+          <HeroImage variant="right" />
+        </div>
       </div>
     </section>
   );
