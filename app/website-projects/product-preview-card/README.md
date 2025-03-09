@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-product-preview-card-w-react-nextjs-and-tailwindcss-3qH_U9lD70)
-- Live Site: [Recipe Page Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/product-preview-card)
+- Live Site: [Product Preview Card Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/product-preview-card)
 
 ## My process
 
