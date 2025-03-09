@@ -8,7 +8,7 @@ import CollageImage from "./collage-image";
 
 export default function MainContentSection() {
   return (
-    <section className="flex flex-col p-8 pb-16 gap-16 xl:px-20 xl:pt-2 xl:pb-18">
+    <section className="flex flex-col p-8 pb-16 gap-16 xl:px-20 xl:pt-14 xl:pb-18">
       {/* content */}
       <div className="flex flex-col max-w-[1120px] gap-16 items-center mx-auto md:max-w-[680px] xl:max-w-[1120px]">
         <NumberHeading num={1} />
