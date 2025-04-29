@@ -1,0 +1,44 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap";
+
+@import "tailwindcss";
+
+@theme {
+  --color-grey-900: hsl(217, 19%, 35%);
+  --color-grey-500: hsl(214, 17%, 51%);
+  --color-grey-400: hsl(212, 23%, 69%);
+  --color-grey-200: hsl(210, 46%, 95%);
+
+  --shadow-card: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+
+  --font-manrope: "Manrope", sans-serif;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    font-family: var(--font-manrope);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.25px;
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-manrope);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 18.2px */
+    letter-spacing: 0.016px;
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-manrope);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 18.2px */
+    letter-spacing: 3.25px;
+    text-transform: uppercase;
+  }
+}
