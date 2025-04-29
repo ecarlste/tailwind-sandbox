@@ -1,6 +1,5 @@
 import Image from "next/image";
-import IconShare from "./_components/icon-share";
-import ShareToast from "./_components/share-toast";
+import ShareButtonWithToast from "./_components/share-button-with-toast";
 
 export default function ArticlePreviewCardPage() {
   return (
@@ -30,10 +29,7 @@ export default function ArticlePreviewCardPage() {
               <span className="text-grey-400">28 Jun 2020</span>
             </div>
           </div>
-          <div className="relative">
-            <ShareToast className="absolute bottom-[30px] left-[-118px]" />
-            <IconShare />
-          </div>
+          <ShareButtonWithToast />
         </div>
       </div>
     </article>
