@@ -14,6 +14,12 @@
 }
 
 @layer utilities {
+  .bg-image {
+    background: url("/images/article-preview-card/drawers.jpg") lightgray 0px
+      0px / 100% 100% no-repeat;
+    background-size: cover;
+  }
+
   .text-preset-1 {
     font-family: var(--font-manrope);
     font-size: 20px;
