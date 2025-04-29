@@ -1,10 +1,11 @@
 import Image from "next/image";
 import IconShare from "./_components/icon-share";
+import ShareToast from "./_components/share-toast";
 
 export default function ArticlePreviewCardPage() {
   return (
-    <article className="bg-white rounded-[10px] shadow-card max-w-[730px] gap-10 flex text-grey-900 overflow-hidden">
-      <div className="shrink-0 w-[285px] h-70 bg-image" />
+    <article className="bg-white rounded-[10px] shadow-card max-w-[730px] gap-10 flex text-grey-900">
+      <div className="shrink-0 w-[285px] h-70 bg-image rounded-l-[10px]" />
       <div className="flex flex-col gap-6 pr-10 py-[30px]">
         <h1 className="text-preset-1">
           Shift the overall look and feel by adding these wonderful touches to
@@ -29,7 +30,10 @@ export default function ArticlePreviewCardPage() {
               <span className="text-grey-400">28 Jun 2020</span>
             </div>
           </div>
-          <IconShare />
+          <div className="relative">
+            <ShareToast className="absolute bottom-[30px] left-[-118px]" />
+            <IconShare />
+          </div>
         </div>
       </div>
     </article>
