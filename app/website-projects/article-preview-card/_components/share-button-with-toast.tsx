@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import IconFacebook from "./icon-facebook";
-import IconPinterest from "./icon-pinterest";
 import IconShare from "./icon-share";
-import IconTwitter from "./icon-twitter";
-import ShareToast from "./share-toast";
+import ShareToastBackground from "./share-toast-background";
+import ShareToastLinks from "./share-toast-links";
 
 function ShareButtonWithToast() {
   const [isToastVisible, setIsToastVisible] = useState(false);
@@ -14,15 +12,16 @@ function ShareButtonWithToast() {
     <div className="relative">
       {isToastVisible && (
         <>
-          <ShareToast className="absolute bottom-[30px] left-[-118px]" />
-          <div className="absolute flex gap-6 bottom-[80px] left-[-73px]">
-            <span className="text-preset-3 text-grey-400">Share</span>
-            <div className="flex gap-4">
-              <IconFacebook />
-              <IconTwitter />
-              <IconPinterest />
-            </div>
-          </div>
+          {/* Tablet and Desktop */}
+          <ShareToastBackground className="absolute bottom-[30px] left-[-118px] hidden md:block" />
+          <ShareToastLinks className="absolute md:flex gap-6 bottom-[80px] left-[-73px] hidden" />
+
+          {/* Mobile */}
+          <ShareToastBackground
+            className="absolute md:hidden top-[-22px] right-[-30px]"
+            variant="mobile"
+            setIsToastVisible={setIsToastVisible}
+          />
         </>
       )}
       <IconShare setIsToastVisible={setIsToastVisible} />
