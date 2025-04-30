@@ -23,11 +23,11 @@ export default function HomePage() {
       <SectionContainer className="pt-16">
         <LargeHeader>Tailwind + NextJS Website Layouts</LargeHeader>
         <SectionContent>
-          This is an exploration of the website layouts I&apos;ve built based
-          frontendmentor.io. I originally built the first four projects using
-          TailwindCSS, HTML and some JavaScript. I then proceeded to convert
-          them over to using NextJS. All projects listed after the initial four
-          were started as NextJS.
+          This is an exploration of the website layouts and components I&apos;ve
+          built based on frontendmentor.io challenges. I originally built the
+          first four projects using TailwindCSS, HTML and some JavaScript. I
+          then proceeded to convert them over to using NextJS. All projects
+          listed after the initial four were started as NextJS.
         </SectionContent>
       </SectionContainer>
       <div className="container flex flex-wrap mx-auto justify-center p-6 space-y-6 md:px-0 md:space-y-0 max-w-6xl">
