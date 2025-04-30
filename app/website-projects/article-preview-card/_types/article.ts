@@ -1,6 +1,6 @@
 export type Article = {
   title: string;
-  text: string;
+  summary: string;
   avatarImageUrl: string;
   author: string;
   authoredDate: string;
