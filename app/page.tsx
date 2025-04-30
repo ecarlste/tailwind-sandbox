@@ -15,6 +15,7 @@ import recipePageSiteScreenshotDesktop from "@/public/images/recipe-page-website
 import productPreviewCardSiteScreenshotDesktop from "@/public/images/product-preview-card-website-screenshot-desktop.png";
 import fourCardFeatureSiteScreenshotDesktop from "@/public/images/four-card-feature/screenshot-desktop.png";
 import meetLandingPageSiteScreenshot from "@/public/images/meet-landing-page/screenshot-desktop.png";
+import articlePreviewPageSiteScreenshot from "@/public/images/article-preview-card-site-desktop-preview.png";
 
 export default function HomePage() {
   return (
@@ -94,6 +95,12 @@ export default function HomePage() {
           linkUrl="website-projects/meet-landing-page"
           image={meetLandingPageSiteScreenshot}
           imageAlt="Meet Landing Page Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/article-preview-card"
+          image={articlePreviewPageSiteScreenshot}
+          imageAlt="Article Preview Card Website"
         />
       </div>
     </>
