@@ -9,11 +9,19 @@
   --color-grey-200: hsl(210, 46%, 95%);
 
   --shadow-card: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  --shadow-toast: 0 10px 10px rgba(201, 213, 225, 0.5);
+  --drop-shadow-toast-tail: 0 10px 5px rgba(201, 213, 225, 0.5);
 
   --font-manrope: "Manrope", sans-serif;
 }
 
 @layer utilities {
+  .bg-image {
+    background: url("/images/article-preview-card/drawers.jpg") lightgray 0px
+      0px / 100% 100% no-repeat;
+    background-size: cover;
+  }
+
   .text-preset-1 {
     font-family: var(--font-manrope);
     font-size: 20px;
