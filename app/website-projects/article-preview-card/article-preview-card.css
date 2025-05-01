@@ -9,6 +9,8 @@
   --color-grey-200: hsl(210, 46%, 95%);
 
   --shadow-card: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  --shadow-toast: 0 10px 10px rgba(201, 213, 225, 0.5);
+  --drop-shadow-toast-tail: 0 10px 5px rgba(201, 213, 225, 0.5);
 
   --font-manrope: "Manrope", sans-serif;
 }

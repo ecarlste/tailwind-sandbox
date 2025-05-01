@@ -6,12 +6,9 @@ function ShareToastTriangle() {
       viewBox="0 0 24 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-grey-900"
+      className="text-grey-900 drop-shadow-toast-tail"
     >
-      <path
-        d="M0 0 L24 0 L12 12 Z"
-        fill="currentColor" // Change fill color as needed
-      />
+      <path d="M0 0 L24 0 L12 12 Z" fill="currentColor" />
     </svg>
   );
 }
