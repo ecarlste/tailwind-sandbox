@@ -17,7 +17,7 @@ export default function ShareToastBackground({
     <>
       {variant === "mobile" && (
         <div
-          className={`flex w-[327px] h-[76px] bg-grey-900 rounded-b-[10px] px-8 py-4 text-white ${className}`}
+          className={`flex w-[327px] h-[76px] bg-grey-900 rounded-b-[10px] px-[30px] py-4 text-white ${className}`}
         >
           <div className="flex justify-between w-full items-center">
             <ShareToastLinks className="flex gap-6" />
