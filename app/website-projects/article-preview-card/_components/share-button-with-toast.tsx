@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import IconShare from "./icon-share";
-import ShareToastBackground from "./share-toast-background";
-import ShareToastLinks from "./share-toast-links";
+import ShareToastMobile from "./share-toast-mobile";
+import ShareToastDesktopTablet from "./share-toast-desktop-tablet";
 
 function ShareButtonWithToast() {
   const [isToastVisible, setIsToastVisible] = useState(false);
@@ -12,14 +12,9 @@ function ShareButtonWithToast() {
     <div className="relative">
       {isToastVisible && (
         <>
-          {/* Tablet and Desktop */}
-          <ShareToastBackground className="absolute bottom-[30px] left-[-118px] hidden md:block" />
-          <ShareToastLinks className="absolute md:flex gap-6 bottom-[80px] left-[-73px] hidden" />
-
-          {/* Mobile */}
-          <ShareToastBackground
+          <ShareToastDesktopTablet className="absolute bottom-[50px] left-[-108px] hidden md:flex" />
+          <ShareToastMobile
             className="absolute md:hidden top-[-22px] right-[-30px]"
-            variant="mobile"
             setIsToastVisible={setIsToastVisible}
           />
         </>
