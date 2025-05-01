@@ -1,0 +1,50 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap";
+
+@import "tailwindcss";
+
+@theme {
+  --color-grey: hsl(0, 0, 58%);
+
+  --color-blue-700: hsl(235, 18%, 26%);
+  --color-blue-800: hsl(234, 29%, 20%);
+
+  --color-red: hsl(4, 100%, 67%);
+
+  --shadow-card: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    font-family: var(--font-roboto);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 56px */
+  }
+
+  .text-preset-1m {
+    font-family: var(--font-roboto);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+  }
+}
