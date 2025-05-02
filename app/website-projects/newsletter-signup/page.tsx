@@ -35,7 +35,9 @@ export default function NewsletterSignupPage() {
               data-1p-ignore
             />
           </div>
-          <button>Subscribe to monthly newsletter</button>
+          <button className="rounded-lg px-12 py-4 bg-blue-800 text-preset-2 text-white">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
     </div>
