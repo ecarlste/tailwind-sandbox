@@ -14,5 +14,9 @@ export default function NewsletterSignupLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <main className="h-lvh bg-white md:bg-blue-800">{children}</main>;
+  return (
+    <main className="h-lvh bg-white md:bg-blue-800 flex justify-center">
+      {children}
+    </main>
+  );
 }
