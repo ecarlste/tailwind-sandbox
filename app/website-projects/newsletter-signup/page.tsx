@@ -29,9 +29,10 @@ export default function NewsletterSignupPage() {
           <div className="flex flex-col gap-2">
             <label className="text-preset-3">Email address</label>
             <input
-              className="text-preset-2"
+              className="text-preset-2 outline-none px-6 py-4 rounded-lg border-[1px] border-grey focus:border-blue-800"
               type="email"
               placeholder="email@company.com"
+              data-1p-ignore
             />
           </div>
           <button>Subscribe to monthly newsletter</button>
