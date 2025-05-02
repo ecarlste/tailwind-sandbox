@@ -8,8 +8,8 @@ const benefits = [
 
 function CallToActionSection() {
   return (
-    <section className="flex flex-col gap-6">
-      <h1 className="text-preset-1m">Stay Updated!</h1>
+    <section className="flex flex-col gap-6 lg:gap-8">
+      <h1 className="text-preset-1">Stay Updated!</h1>
       <p className="text-preset-2">
         Join 60,000+ product managers receiving monthly updates on:
       </p>

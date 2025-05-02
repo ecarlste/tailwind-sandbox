@@ -18,18 +18,14 @@
 @layer utilities {
   .text-preset-1 {
     font-family: var(--font-roboto);
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%; /* 56px */
-  }
-
-  .text-preset-1m {
-    font-family: var(--font-roboto);
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 40px */
+    line-height: 100%; /* 56px */
+
+    @variant md {
+      font-size: 56px;
+    }
   }
 
   .text-preset-2 {

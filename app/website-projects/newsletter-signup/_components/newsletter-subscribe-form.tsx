@@ -1,6 +1,6 @@
 function NewsletterSubscribeForm() {
   return (
-    <form className="flex flex-col gap-6">
+    <form className="flex flex-col gap-6 md:gap-4 lg:gap-6">
       <div className="flex flex-col gap-2">
         <label className="text-preset-3">Email address</label>
         <input
