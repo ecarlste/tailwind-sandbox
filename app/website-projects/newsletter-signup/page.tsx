@@ -27,8 +27,12 @@ export default function NewsletterSignupPage() {
         </section>
         <form className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <label>Email address</label>
-            <input type="email" placeholder="email@company.com" />
+            <label className="text-preset-3">Email address</label>
+            <input
+              className="text-preset-2"
+              type="email"
+              placeholder="email@company.com"
+            />
           </div>
           <button>Subscribe to monthly newsletter</button>
         </form>
