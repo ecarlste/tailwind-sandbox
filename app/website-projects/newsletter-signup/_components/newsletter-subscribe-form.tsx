@@ -10,7 +10,7 @@ function NewsletterSubscribeForm() {
           data-1p-ignore
         />
       </div>
-      <button className="rounded-lg px-12 py-4 bg-blue-800 text-preset-2 text-white">
+      <button className="rounded-lg px-12 py-4 bg-blue-800 text-preset-2 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-rose-500">
         Subscribe to monthly newsletter
       </button>
     </form>

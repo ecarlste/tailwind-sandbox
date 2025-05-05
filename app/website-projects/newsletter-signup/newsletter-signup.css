@@ -10,10 +10,17 @@
 
   --color-red: hsl(4, 100%, 67%);
 
-  --shadow-card: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  --shadow-card: 0 15px 60px 0px rgba(0, 0, 0, 0.25);
 
   --font-roboto: "Roboto", sans-serif;
 }
+
+/* 
+button hover gradient background w/ shadow
+
+background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+*/
 
 @layer utilities {
   .text-preset-1 {
