@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap";
+
+@import "tailwindcss";
+
+@theme {
+  --color-navy-200: hsl(236, 100%, 87%);
+  --color-navy-800: hsl(235, 41%, 34%);
+  --color-navy-900: hsl(235, 46%, 20%);
+  --color-navy-950: hsl(226, 43%, 10%);
+
+  --color-orange-300: hsl(15, 100%, 70%);
+
+  --color-purple-500: hsl(235, 45%, 61%);
+  --color-purple-600: hsl(246, 80%, 60%);
+  --color-purple-700: hsl(264, 64%, 52%);
+
+  --color-blue-300: hsl(195, 74%, 62%);
+
+  --color-pink-400: hsl(348, 100%, 68%);
+
+  --color-green-400: hsl(145, 58%, 55%);
+
+  --color-yellow-300: hsl(43, 84%, 65%);
+
+  --color-grey-200: hsl(0, 0%, 85%);
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    font-family: var(--font-rubik);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4.125rem; /* 117.857% */
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-rubik);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.9375rem; /* 117.5% */
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-rubik);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.375rem; /* 118.75% */
+  }
+
+  .text-preset-4 {
+    font-family: var(--font-rubik);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75rem; /* 116.667% */
+  }
+
+  .text-preset-5 {
+    font-family: var(--font-rubik);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem; /* 116.667% */
+  }
+
+  .text-preset-6 {
+    font-family: var(--font-rubik);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 120% */
+  }
+}
