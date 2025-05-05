@@ -4,13 +4,14 @@ import data from "./_utils/data.json";
 
 export default function NewsletterSignupPage() {
   return (
-    <div className="bg-green-500">
-      <DashboardConfig />
+    <div className="grid grid-cols-2 gap-6">
+      <DashboardConfig className="col-span-2" />
       {data.map((entry) => (
         <DashboardDataCard
           key={entry.title}
           title={entry.title}
           timeframes={entry.timeframes}
+          className="col-span-1"
         />
       ))}
     </div>

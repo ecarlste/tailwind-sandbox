@@ -12,10 +12,11 @@ type Timeframes = {
 type DashboardDataCardProps = {
   title: string;
   timeframes: Timeframes;
+  className?: string;
 };
 
-function DashboardDataCard({ title }: DashboardDataCardProps) {
-  return <div>{title}</div>;
+function DashboardDataCard({ title, className }: DashboardDataCardProps) {
+  return <div className={className}>{title}</div>;
 }
 
 export default DashboardDataCard;
