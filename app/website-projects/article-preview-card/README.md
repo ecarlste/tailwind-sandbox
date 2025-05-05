@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/)
+- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-article-preview-component-w-nextjsreacttailwind-W6Uf9b0QwQ)
 - Live Site: [Article Preview Card Deploy on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/article-preview-card)
 
 ## My process

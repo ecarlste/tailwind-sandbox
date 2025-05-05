@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/)
+- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/meet-landing-page-w-react-nextjs-tailwindcss-and-typescript-HJwsyMqwTs)
 - Live Site: [Meet Landing Page Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/meet-landing-page)
 
 ## My process

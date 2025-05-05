@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/)
+- Solution: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-w-nextjstailwindzodreact-hook-form-bpOQ_XiMD0)
 - Live Site: [Newsletter Sign Up Form Deployed on Vercel](https://learning-tailwind-inky.vercel.app/website-projects/newsletter-signup)
 
 ## My process
