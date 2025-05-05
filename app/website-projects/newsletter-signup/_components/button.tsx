@@ -13,7 +13,7 @@ function Button({ children, onClick }: ButtonProps) {
       onClick={onClick}
       className="rounded-lg p-4 bg-blue-800 text-preset-2 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-rose-500 hover:shadow-button hover:cursor-pointer"
     >
-      <b>{children}</b>
+      <strong>{children}</strong>
     </button>
   );
 }
