@@ -4,8 +4,8 @@ import data from "./_utils/data.json";
 
 export default function NewsletterSignupPage() {
   return (
-    <div className="grid grid-cols-2 gap-6">
-      <DashboardConfig className="col-span-2" />
+    <div className="grid grid-cols-1 gap-6">
+      <DashboardConfig className="col-span-1" />
       {data.map((entry) => (
         <DashboardDataCard
           key={entry.title}
