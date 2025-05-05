@@ -10,6 +10,9 @@
 
   --color-red: hsl(4, 100%, 67%);
 
+  --color-orange-500: hsl(15, 100%, 61%);
+  --color-rose-500: hsl(346, 100%, 66%);
+
   --shadow-card: 0 15px 60px 0px rgba(0, 0, 0, 0.25);
 
   --font-roboto: "Roboto", sans-serif;
