@@ -15,7 +15,8 @@ import recipePageSiteScreenshotDesktop from "@/public/images/recipe-page-website
 import productPreviewCardSiteScreenshotDesktop from "@/public/images/product-preview-card-website-screenshot-desktop.png";
 import fourCardFeatureSiteScreenshotDesktop from "@/public/images/four-card-feature/screenshot-desktop.png";
 import meetLandingPageSiteScreenshot from "@/public/images/meet-landing-page/screenshot-desktop.png";
-import articlePreviewPageSiteScreenshot from "@/public/images/article-preview-card-site-desktop-preview.png";
+import articlePreviewCardSiteScreenshot from "@/public/images/article-preview-card-site-desktop-preview.png";
+import newsletterSignupFormSiteScreenshot from "@/public/images/newsletter-signup/screenshot-desktop.png";
 
 export default function HomePage() {
   return (
@@ -99,8 +100,14 @@ export default function HomePage() {
 
         <GalleryItem
           linkUrl="website-projects/article-preview-card"
-          image={articlePreviewPageSiteScreenshot}
+          image={articlePreviewCardSiteScreenshot}
           imageAlt="Article Preview Card Website"
+        />
+
+        <GalleryItem
+          linkUrl="website-projects/newsletter-signup"
+          image={newsletterSignupFormSiteScreenshot}
+          imageAlt="Newsletter Sign Up Form Website"
         />
       </div>
     </>
