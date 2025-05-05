@@ -1,8 +1,10 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import Button from "./button";
 
 const FormSchema = z.object({
   email: z.string().email({
@@ -13,6 +15,7 @@ const FormSchema = z.object({
 type FormInput = z.infer<typeof FormSchema>;
 
 function NewsletterSubscribeForm() {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -22,11 +25,14 @@ function NewsletterSubscribeForm() {
     defaultValues: { email: "" },
   });
 
+  const onSubmit = handleSubmit((data) => {
+    router.push(
+      `/website-projects/newsletter-signup/success?email=${data.email}`
+    );
+  });
+
   return (
-    <form
-      className="flex flex-col gap-6 md:gap-4 lg:gap-6"
-      onSubmit={handleSubmit((d) => console.log(d))}
-    >
+    <form className="flex flex-col gap-6 md:gap-4 lg:gap-6" onSubmit={onSubmit}>
       <div className="flex flex-col gap-2">
         <label htmlFor="email" className="text-preset-3 flex justify-between">
           <span>Email address</span>
@@ -46,9 +52,7 @@ function NewsletterSubscribeForm() {
           {...register("email")}
         />
       </div>
-      <button className="rounded-lg px-12 py-4 bg-blue-800 text-preset-2 text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-rose-500 hover:shadow-button">
-        Subscribe to monthly newsletter
-      </button>
+      <Button>Subscribe to monthly newsletter</Button>
     </form>
   );
 }
