@@ -9,21 +9,16 @@
   --color-blue-800: hsl(234, 29%, 20%);
 
   --color-red: hsl(4, 100%, 67%);
+  --color-red-100: hsl(2, 100%, 95%);
 
   --color-orange-500: hsl(15, 100%, 61%);
   --color-rose-500: hsl(346, 100%, 66%);
 
-  --shadow-card: 0 15px 60px 0px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  --shadow-button: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
 
   --font-roboto: "Roboto", sans-serif;
 }
-
-/* 
-button hover gradient background w/ shadow
-
-background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
-box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
-*/
 
 @layer utilities {
   .text-preset-1 {
