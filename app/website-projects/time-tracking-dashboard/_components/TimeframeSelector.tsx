@@ -1,10 +1,21 @@
+"use client";
+
+import { useTimeframeStore } from "../_providers/TimeframeStoreProvider";
+import { TimeframeChoices } from "../_types/Timeframe";
 import { cn } from "../_utils/utils";
 
 type TimeframeSelectorProps = {
   className?: string;
 };
 
+const timeframes: TimeframeChoices[] = ["daily", "weekly", "monthly"];
+
 function TimeframeSelector({ className }: TimeframeSelectorProps) {
+  const { timeframe, setTimeframe } = useTimeframeStore((state) => state);
+
+  const selectorClassName =
+    "flex justify-center xl:justify-start w-[6.8125rem]";
+
   return (
     <div
       className={cn(
@@ -12,15 +23,20 @@ function TimeframeSelector({ className }: TimeframeSelectorProps) {
         className
       )}
     >
-      <div className="flex justify-center xl:justify-start w-[6.8125rem]">
-        Daily
-      </div>
-      <div className="flex text-white justify-center xl:justify-start w-[6.8125rem]">
-        Weekly
-      </div>
-      <div className="flex justify-center xl:justify-start w-[6.8125rem]">
-        Monthly
-      </div>
+      {timeframes.map((currentTimeframe) => (
+        <div
+          key={currentTimeframe}
+          className={cn(
+            selectorClassName,
+            timeframe === currentTimeframe
+              ? "text-white"
+              : "hover:cursor-pointer hover:text-navy-200"
+          )}
+          onClick={() => setTimeframe(currentTimeframe)}
+        >
+          {currentTimeframe}
+        </div>
+      ))}
     </div>
   );
 }
