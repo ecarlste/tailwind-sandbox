@@ -4,7 +4,7 @@ function UserInfo() {
   return (
     <div className="bg-purple-600 rounded-[0.9375rem] p-8 h-auto w-full xl:h-[22.125rem] xl:w-[15.9375rem] flex">
       <div className="flex flex-row xl:flex-col gap-6">
-        <div className="w-16 h-16 xl:w-[4.875rem] xl:h-[4.875rem]">
+        <div className="w-[70px] h-[70px] xl:w-[84px] xl:h-[84px] border-[3px] border-white rounded-full drop-shadow-avatar">
           <Image
             src="/images/time-tracking-dashboard/image-jeremy.png"
             alt="Profile Avatar Image for Jeremy Robson"
