@@ -14,7 +14,7 @@ function TimeframeSelector({ className }: TimeframeSelectorProps) {
   const { timeframe, setTimeframe } = useTimeframeStore((state) => state);
 
   const selectorClassName =
-    "flex justify-center xl:justify-start w-[6.8125rem]";
+    "flex justify-center xl:justify-start w-[6.8125rem] capitalize";
 
   return (
     <div

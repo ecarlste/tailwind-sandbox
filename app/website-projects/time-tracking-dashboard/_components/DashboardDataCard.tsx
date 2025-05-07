@@ -1,5 +1,15 @@
+"use client";
+
 import { Ellipsis } from "lucide-react";
 import { cn } from "../_utils/utils";
+import { useTimeframeStore } from "../_providers/TimeframeStoreProvider";
+import { TimeframeChoices } from "../_types/Timeframe";
+
+const previousTimeframeText: Record<TimeframeChoices, string> = {
+  daily: "yesterday",
+  weekly: "last week",
+  monthly: "last month",
+};
 
 type Timeframe = {
   current: number;
@@ -23,7 +33,8 @@ export default function DashboardDataCard({
   timeframes,
   className,
 }: DashboardDataCardProps) {
-  const timeframe = "weekly";
+  const { timeframe } = useTimeframeStore((state) => state);
+
   const { current, previous } = timeframes[timeframe];
   const background = getBackgroundDataByTitle(title);
 
@@ -49,8 +60,8 @@ export default function DashboardDataCard({
         </div>
         <div className="flex flex-row md:flex-col gap-0 md:gap-2 justify-between md:justify-center items-center md:items-start">
           <div className="text-card-time-primary">{current}hrs</div>
-          <div className="text-preset-6 text-navy-200">
-            Last Week - {previous}hrs
+          <div className="text-preset-6 text-navy-200 capitalize">
+            {previousTimeframeText[timeframe]} - {previous}hrs
           </div>
         </div>
       </div>
