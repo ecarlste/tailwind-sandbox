@@ -17,6 +17,80 @@ import fourCardFeatureSiteScreenshotDesktop from "@/public/images/four-card-feat
 import meetLandingPageSiteScreenshot from "@/public/images/meet-landing-page/screenshot-desktop.png";
 import articlePreviewCardSiteScreenshot from "@/public/images/article-preview-card-site-desktop-preview.png";
 import newsletterSignupFormSiteScreenshot from "@/public/images/newsletter-signup/screenshot-desktop.png";
+import timeTrackingDashboardSiteScreenshot from "@/public/images/time-tracking-dashboard/desktop-screenshot.png";
+
+const galleryItems = [
+  {
+    linkUrl: "website-projects/clipboard",
+    image: clipboardSiteScreenshotDesktop,
+    imageAlt: "Clipboard Website",
+  },
+  {
+    linkUrl: "website-projects/loopstudios",
+    image: loopstudiosSiteScreenshotDesktop,
+    imageAlt: "Loopstudios Website",
+  },
+  {
+    linkUrl: "website-projects/shortly",
+    image: shortlySiteScreenshotDesktop,
+    imageAlt: "Shortly Website",
+  },
+  {
+    linkUrl: "website-projects/testimonial-grid",
+    image: testimonialGridSiteScreenshotDesktop,
+    imageAlt: "Testimonial Grid Website",
+  },
+  {
+    linkUrl: "website-projects/qr-code",
+    image: qrCodeSiteScreenshotDesktop,
+    imageAlt: "QR Code Website",
+  },
+  {
+    linkUrl: "website-projects/blog-preview-card",
+    image: blogPreviewCardSiteScreenshotDesktop,
+    imageAlt: "Blog Preview Card Website",
+  },
+  {
+    linkUrl: "website-projects/social-links-profile",
+    image: socialLinksProfileSiteScreenshotDesktop,
+    imageAlt: "Social Links Profile Website",
+  },
+  {
+    linkUrl: "website-projects/recipe-page",
+    image: recipePageSiteScreenshotDesktop,
+    imageAlt: "Recipe Page Website",
+  },
+  {
+    linkUrl: "website-projects/product-preview-card",
+    image: productPreviewCardSiteScreenshotDesktop,
+    imageAlt: "Product Preview Card Website",
+  },
+  {
+    linkUrl: "website-projects/four-card-feature",
+    image: fourCardFeatureSiteScreenshotDesktop,
+    imageAlt: "Four Card Feature Website",
+  },
+  {
+    linkUrl: "website-projects/meet-landing-page",
+    image: meetLandingPageSiteScreenshot,
+    imageAlt: "Meet Landing Page Website",
+  },
+  {
+    linkUrl: "website-projects/article-preview-card",
+    image: articlePreviewCardSiteScreenshot,
+    imageAlt: "Article Preview Card Website",
+  },
+  {
+    linkUrl: "website-projects/newsletter-signup",
+    image: newsletterSignupFormSiteScreenshot,
+    imageAlt: "Newsletter Sign Up Form Website",
+  },
+  {
+    linkUrl: "website-projects/time-tracking-dashboard",
+    image: timeTrackingDashboardSiteScreenshot,
+    imageAlt: "Time Tracking Dashboard Website",
+  },
+];
 
 export default function HomePage() {
   return (
@@ -32,83 +106,14 @@ export default function HomePage() {
         </SectionContent>
       </SectionContainer>
       <div className="container flex flex-wrap mx-auto justify-center p-6 space-y-6 md:px-0 md:space-y-0 max-w-6xl">
-        <GalleryItem
-          linkUrl="website-projects/clipboard"
-          image={clipboardSiteScreenshotDesktop}
-          imageAlt="Clipboard Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/loopstudios"
-          image={loopstudiosSiteScreenshotDesktop}
-          imageAlt="Loopstudios Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/shortly"
-          image={shortlySiteScreenshotDesktop}
-          imageAlt="Shortly Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/testimonial-grid"
-          image={testimonialGridSiteScreenshotDesktop}
-          imageAlt="Testimonial Grid Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/qr-code"
-          image={qrCodeSiteScreenshotDesktop}
-          imageAlt="QR Code Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/blog-preview-card"
-          image={blogPreviewCardSiteScreenshotDesktop}
-          imageAlt="Blog Preview Card Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/social-links-profile"
-          image={socialLinksProfileSiteScreenshotDesktop}
-          imageAlt="Social Links Profile Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/recipe-page"
-          image={recipePageSiteScreenshotDesktop}
-          imageAlt="Recipe Page Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/product-preview-card"
-          image={productPreviewCardSiteScreenshotDesktop}
-          imageAlt="Product Preview Card Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/four-card-feature"
-          image={fourCardFeatureSiteScreenshotDesktop}
-          imageAlt="Four Card Feature Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/meet-landing-page"
-          image={meetLandingPageSiteScreenshot}
-          imageAlt="Meet Landing Page Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/article-preview-card"
-          image={articlePreviewCardSiteScreenshot}
-          imageAlt="Article Preview Card Website"
-        />
-
-        <GalleryItem
-          linkUrl="website-projects/newsletter-signup"
-          image={newsletterSignupFormSiteScreenshot}
-          imageAlt="Newsletter Sign Up Form Website"
-        />
+        {galleryItems.map((galleryItem) => (
+          <GalleryItem
+            key={galleryItem.linkUrl}
+            linkUrl={galleryItem.linkUrl}
+            image={galleryItem.image}
+            imageAlt={galleryItem.imageAlt}
+          />
+        ))}
       </div>
     </>
   );
