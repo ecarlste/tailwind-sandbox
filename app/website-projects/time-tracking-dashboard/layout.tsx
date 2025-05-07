@@ -15,7 +15,7 @@ export default function TimeTrackingDashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="h-lvh flex justify-center items-start bg-navy-950 text-white text-preset-5 px-6 py-[5.0625rem]">
+    <main className="h-auto md:h-lvh flex justify-center items-start md:items-center bg-navy-950 text-white text-preset-5 py-[5.0625rem] md:py-0">
       {children}
     </main>
   );

@@ -8,11 +8,11 @@
   --color-navy-900: hsl(235, 46%, 20%);
   --color-navy-950: hsl(226, 43%, 10%);
 
-  --color-orange-300: hsl(15, 100%, 70%);
-
   --color-purple-500: hsl(235, 45%, 61%);
   --color-purple-600: hsl(246, 80%, 60%);
   --color-purple-700: hsl(264, 64%, 52%);
+
+  --color-orange-300: hsl(15, 100%, 70%);
 
   --color-blue-300: hsl(195, 74%, 62%);
 
