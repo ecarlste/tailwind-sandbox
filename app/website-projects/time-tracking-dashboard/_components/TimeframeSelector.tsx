@@ -17,14 +17,14 @@ function TimeframeSelector({ className }: TimeframeSelectorProps) {
     "flex justify-center xl:justify-start w-[6.8125rem] capitalize";
 
   return (
-    <div
+    <ul
       className={cn(
         "flex flex-row xl:flex-col text-purple-500 justify-center gap-0 md:gap-2 xl:gap-[1.3125rem]",
         className
       )}
     >
       {timeframes.map((currentTimeframe) => (
-        <div
+        <li
           key={currentTimeframe}
           className={cn(
             selectorClassName,
@@ -35,9 +35,9 @@ function TimeframeSelector({ className }: TimeframeSelectorProps) {
           onClick={() => setTimeframe(currentTimeframe)}
         >
           {currentTimeframe}
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
