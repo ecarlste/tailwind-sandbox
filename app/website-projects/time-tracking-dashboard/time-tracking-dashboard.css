@@ -28,12 +28,17 @@
 }
 
 @layer utilities {
-  .text-preset-1 {
+  .text-card-time-primary {
     font-family: var(--font-rubik);
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 4.125rem; /* 117.857% */
+    line-height: 2.375rem; /* 118.75% */
+
+    @variant md {
+      font-size: 3.5rem;
+      line-height: 4.125rem; /* 117.857% */
+    }
   }
 
   .text-preset-2 {
@@ -42,14 +47,6 @@
     font-style: normal;
     font-weight: 300;
     line-height: 2.9375rem; /* 117.5% */
-  }
-
-  .text-preset-3 {
-    font-family: var(--font-rubik);
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2.375rem; /* 118.75% */
   }
 
   .text-preset-4 {

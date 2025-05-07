@@ -6,10 +6,10 @@ type TimeframeSelectorProps = {
 
 function TimeframeSelector({ className }: TimeframeSelectorProps) {
   return (
-    <div className={cn("flex text-purple-500", className)}>
-      <div className="flex grow justify-center">Daily</div>
-      <div className="flex text-white grow justify-center">Weekly</div>
-      <div className="flex grow justify-center">Monthly</div>
+    <div className={cn("flex text-purple-500 justify-center", className)}>
+      <div className="flex justify-center w-[6.8125rem]">Daily</div>
+      <div className="flex text-white justify-center w-[6.8125rem]">Weekly</div>
+      <div className="flex justify-center w-[6.8125rem]">Monthly</div>
     </div>
   );
 }

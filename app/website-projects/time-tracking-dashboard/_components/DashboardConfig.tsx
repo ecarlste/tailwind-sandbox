@@ -12,7 +12,7 @@ function DashboardConfig({ className }: DashboardConfigProps) {
       className={cn(className, "flex flex-col rounded-[0.9375rem] bg-navy-900")}
     >
       <UserInfo />
-      <TimeframeSelector className="py-6" />
+      <TimeframeSelector className="py-6 gap-0 md:gap-2" />
     </div>
   );
 }

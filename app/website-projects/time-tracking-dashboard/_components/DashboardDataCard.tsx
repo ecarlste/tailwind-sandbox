@@ -44,11 +44,11 @@ export default function DashboardDataCard({
         )}
       >
         <div className="flex justify-between items-center">
-          <div>{title}</div>
+          <div className="font-medium">{title}</div>
           <Ellipsis className="text-navy-200" />
         </div>
-        <div className="flex justify-between items-center">
-          <div className="text-preset-3">{current}hrs</div>
+        <div className="flex flex-row md:flex-col gap-0 md:gap-2 justify-between md:justify-center items-center md:items-start">
+          <div className="text-card-time-primary">{current}hrs</div>
           <div className="text-preset-6 text-navy-200">
             Last Week - {previous}hrs
           </div>
