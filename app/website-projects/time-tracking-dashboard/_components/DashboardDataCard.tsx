@@ -40,7 +40,7 @@ export default function DashboardDataCard({
       <div
         className={cn(
           className,
-          "flex flex-col gap-2 p-6 xl:p-8 bg-navy-900 rounded-[0.9375rem] h-full"
+          "flex flex-col gap-2 xl:gap-6 p-6 xl:p-8 bg-navy-900 rounded-[0.9375rem] h-full"
         )}
       >
         <div className="flex justify-between items-center">
