@@ -30,7 +30,7 @@ export default function DashboardDataCard({
   return (
     <section
       className={cn(
-        "flex flex-col pt-[2.375rem] rounded-t-[0.9375rem] rounded-b-3xl",
+        "flex flex-col pt-[2.375rem] xl:pt-[2.8125rem] rounded-t-[0.9375rem] rounded-b-3xl",
         background.bgColor,
         background.bgImage
           ? cn(background.bgImage, "bg-no-repeat bg-top-right")
@@ -40,7 +40,7 @@ export default function DashboardDataCard({
       <div
         className={cn(
           className,
-          "flex flex-col gap-2 p-6 bg-navy-900 rounded-[0.9375rem]"
+          "flex flex-col gap-2 p-6 xl:p-8 bg-navy-900 rounded-[0.9375rem] h-full"
         )}
       >
         <div className="flex justify-between items-center">

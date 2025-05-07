@@ -41,20 +41,17 @@
     }
   }
 
-  .text-preset-2 {
-    font-family: var(--font-rubik);
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2.9375rem; /* 117.5% */
-  }
-
-  .text-preset-4 {
+  .text-user-name {
     font-family: var(--font-rubik);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 300;
     line-height: 1.75rem; /* 116.667% */
+
+    @variant lg {
+      font-size: 2.5rem;
+      line-height: 2.9375rem; /* 117.5% */
+    }
   }
 
   .text-preset-5 {
