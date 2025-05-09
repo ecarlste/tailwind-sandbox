@@ -12,7 +12,9 @@ export default function ResultsSection() {
         <CalculatorSummaryAmount title={"Tip Amount"} amount={4.27} />
         <CalculatorSummaryAmount title={"Total"} amount={32.79} />
       </div>
-      <Button>Reset</Button>
+      <Button className={"uppercase"} variant={"secondary"}>
+        Reset
+      </Button>
     </div>
   );
 }

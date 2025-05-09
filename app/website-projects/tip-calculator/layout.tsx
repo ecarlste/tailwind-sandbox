@@ -16,6 +16,8 @@ export default function TipCalculatorLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex bg-grey-200 h-lvh justify-center">{children}</main>
+    <main className="flex bg-grey-200 h-lvh justify-center pt-[163px]">
+      {children}
+    </main>
   );
 }

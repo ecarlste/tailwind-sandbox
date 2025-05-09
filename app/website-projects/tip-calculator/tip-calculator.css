@@ -25,7 +25,7 @@
 }
 
 @layer utilities {
-  .text-preset-1 {
+  .font-preset-1 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 48px;
     font-style: normal;
@@ -34,7 +34,7 @@
     letter-spacing: -1px;
   }
 
-  .text-preset-2 {
+  .font-preset-2 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 32px;
     font-style: normal;
@@ -43,7 +43,7 @@
     letter-spacing: -0.67px;
   }
 
-  .text-preset-3 {
+  .font-preset-3 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -51,7 +51,7 @@
     line-height: 36px; /* 150% */
   }
 
-  .text-preset-4 {
+  .font-preset-4 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -59,7 +59,7 @@
     line-height: 30px; /* 150% */
   }
 
-  .text-preset-5 {
+  .font-preset-5 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -67,7 +67,7 @@
     line-height: 24px; /* 150% */
   }
 
-  .text-preset-6 {
+  .font-preset-6 {
     font-family: var(--font-space-mono), sans-serif;
     font-size: 13px;
     font-style: normal;
