@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import "./tip-calculator.css";
 import React from "react";
+import { CalculatorStoreProvider } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 
 export const metadata: Metadata = {
   title: "Tip Calculator App",
@@ -16,8 +17,10 @@ export default function TipCalculatorLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex bg-grey-200 h-lvh justify-center pt-[163px]">
-      {children}
-    </main>
+    <CalculatorStoreProvider>
+      <main className="flex bg-grey-200 h-lvh justify-center pt-[163px]">
+        {children}
+      </main>
+    </CalculatorStoreProvider>
   );
 }

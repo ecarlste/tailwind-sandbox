@@ -1,12 +1,17 @@
-import Button from "@/app/website-projects/tip-calculator/_components/Button";
-import { useState } from "react";
-import Label from "@/app/website-projects/tip-calculator/_components/Label";
+"use client";
 
-const tipSelectionAmounts = [5, 10, 15, 25, 50] as const;
-type TipSelectionAmount = (typeof tipSelectionAmounts)[number] | null;
+import Button from "@/app/website-projects/tip-calculator/_components/Button";
+import Label from "@/app/website-projects/tip-calculator/_components/Label";
+import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
+import {
+  TipSelectionAmount,
+  tipSelectionAmounts,
+} from "@/app/website-projects/tip-calculator/_types/TipSelectionAmount";
 
 export default function TipSelectionSection({}) {
-  const [tipPercentage, setTipPercentage] = useState<TipSelectionAmount>(15);
+  const { tipPercentage, setTipPercentage } = useCalculatorStore(
+    (state) => state,
+  );
 
   const handleClick = (amount: TipSelectionAmount) => {
     setTipPercentage(amount);

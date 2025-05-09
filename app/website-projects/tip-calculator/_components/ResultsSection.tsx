@@ -1,7 +1,12 @@
+"use client";
+
 import CalculatorSummaryAmount from "@/app/website-projects/tip-calculator/_components/CalculatorSummaryAmount";
 import Button from "@/app/website-projects/tip-calculator/_components/Button";
+import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 
 export default function ResultsSection() {
+  const { results } = useCalculatorStore((state) => state);
+
   return (
     <div
       className={
@@ -9,8 +14,14 @@ export default function ResultsSection() {
       }
     >
       <div className={"flex flex-col gap-6"}>
-        <CalculatorSummaryAmount title={"Tip Amount"} amount={4.27} />
-        <CalculatorSummaryAmount title={"Total"} amount={32.79} />
+        <CalculatorSummaryAmount
+          title={"Tip Amount"}
+          amount={results.tipPerPerson}
+        />
+        <CalculatorSummaryAmount
+          title={"Total"}
+          amount={results.totalPerPerson}
+        />
       </div>
       <Button className={"uppercase"} variant={"secondary"}>
         Reset
