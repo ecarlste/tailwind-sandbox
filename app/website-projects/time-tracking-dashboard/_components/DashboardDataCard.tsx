@@ -1,7 +1,7 @@
 "use client";
 
 import { Ellipsis } from "lucide-react";
-import { cn } from "../_utils/utils";
+import { cn } from "@/utils/utils";
 import { useTimeframeStore } from "../_providers/TimeframeStoreProvider";
 import { TimeframeChoices } from "../_types/Timeframe";
 
@@ -45,13 +45,13 @@ export default function DashboardDataCard({
         background.bgColor,
         background.bgImage
           ? cn(background.bgImage, "bg-no-repeat bg-top-right")
-          : ""
+          : "",
       )}
     >
       <div
         className={cn(
           className,
-          "flex flex-col gap-2 xl:gap-6 p-6 xl:p-8 bg-navy-900 rounded-[0.9375rem] h-full"
+          "flex flex-col gap-2 xl:gap-6 p-6 xl:p-8 bg-navy-900 rounded-[0.9375rem] h-full",
         )}
       >
         <div className="flex justify-between items-center">

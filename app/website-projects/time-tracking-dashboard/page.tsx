@@ -1,6 +1,6 @@
 import DashboardConfig from "./_components/DashboardConfig";
 import DashboardDataCard from "./_components/DashboardDataCard";
-import data from "./_utils/data.json";
+import data from "@/app/website-projects/time-tracking-dashboard/_utils/data.json";
 
 export default function NewsletterSignupPage() {
   return (

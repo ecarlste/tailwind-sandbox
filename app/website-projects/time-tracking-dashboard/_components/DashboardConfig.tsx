@@ -1,4 +1,4 @@
-import { cn } from "../_utils/utils";
+import { cn } from "@/utils/utils";
 import UserInfo from "./UserInfo";
 import TimeframeSelector from "./TimeframeSelector";
 
