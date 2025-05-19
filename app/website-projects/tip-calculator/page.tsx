@@ -1,5 +1,5 @@
-import ResultsSection from "@/app/website-projects/tip-calculator/_components/ResultsSection";
-import BillSection from "@/app/website-projects/tip-calculator/_components/BillSection";
+import ResultsSection from "@/app/website-projects/tip-calculator/_components/summary/ResultsSection";
+import BillSection from "@/app/website-projects/tip-calculator/_components/bill/BillSection";
 
 export default function TipCalculatorPage() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import CalculatorSummaryAmount from "@/app/website-projects/tip-calculator/_components/CalculatorSummaryAmount";
+import CalculatorSummaryAmount from "@/app/website-projects/tip-calculator/_components/summary/CalculatorSummaryAmount";
 import Button from "@/app/website-projects/tip-calculator/_components/Button";
 import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 

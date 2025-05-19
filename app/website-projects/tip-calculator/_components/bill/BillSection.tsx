@@ -1,9 +1,9 @@
 "use client";
 
-import Input from "./Input";
-import IconDollar from "@/app/website-projects/tip-calculator/_components/IconDollar";
-import IconPerson from "@/app/website-projects/tip-calculator/_components/IconPerson";
-import TipSelectionSection from "@/app/website-projects/tip-calculator/_components/TipSelectionSection";
+import Input from "../forms/Input";
+import IconDollar from "@/app/website-projects/tip-calculator/_components/icons/IconDollar";
+import IconPerson from "@/app/website-projects/tip-calculator/_components/icons/IconPerson";
+import TipSelectionSection from "@/app/website-projects/tip-calculator/_components/bill/TipSelectionSection";
 import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 
 export default function BillSection() {

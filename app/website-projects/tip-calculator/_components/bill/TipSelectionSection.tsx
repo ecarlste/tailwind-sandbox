@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/app/website-projects/tip-calculator/_components/Button";
-import Label from "@/app/website-projects/tip-calculator/_components/Label";
+import Label from "@/app/website-projects/tip-calculator/_components/forms/Label";
 import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 import {
   TipSelectionAmount,
@@ -10,7 +10,7 @@ import {
 
 export default function TipSelectionSection({}) {
   const { tipPercentage, setTipPercentage } = useCalculatorStore(
-    (state) => state,
+    (state) => state
   );
 
   const handleClick = (amount: TipSelectionAmount) => {
