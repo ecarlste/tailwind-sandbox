@@ -1,6 +1,5 @@
 import { createStore } from "zustand/vanilla";
 import { TipSelectionAmount } from "@/app/website-projects/tip-calculator/_types/TipSelectionAmount";
-import { number } from "zod";
 
 export type SplitResults = {
   tipPerPerson: number;
@@ -18,6 +17,7 @@ export type CalculatorActions = {
   setBillAmount: (billAmount: string) => void;
   setTipPercentage: (tipPercentage: TipSelectionAmount) => void;
   setNumberOfPeople: (numberOfPeople: string) => void;
+  resetBill: () => void;
 };
 
 export type CalculatorStore = CalculatorState & CalculatorActions;
@@ -80,6 +80,10 @@ export const createCalculatorStore = (
           numberOfPeople,
           results,
         };
+      }),
+    resetBill: () =>
+      set(() => {
+        return defaultInitState;
       }),
   }));
 };

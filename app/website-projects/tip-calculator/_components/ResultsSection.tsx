@@ -5,7 +5,7 @@ import Button from "@/app/website-projects/tip-calculator/_components/Button";
 import { useCalculatorStore } from "@/app/website-projects/tip-calculator/_providers/CalculatorStoreProvider";
 
 export default function ResultsSection() {
-  const { results } = useCalculatorStore((state) => state);
+  const { results, resetBill } = useCalculatorStore((state) => state);
 
   return (
     <div
@@ -23,7 +23,7 @@ export default function ResultsSection() {
           amount={results.totalPerPerson}
         />
       </div>
-      <Button className={"uppercase"} variant={"secondary"}>
+      <Button className={"uppercase"} variant={"secondary"} onClick={resetBill}>
         Reset
       </Button>
     </div>
