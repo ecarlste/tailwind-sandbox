@@ -13,7 +13,9 @@ export default function CalculatorSummaryAmount({
         <span className={"font-preset-5 text-white"}>{title}</span>
         <span className={"font-preset-6 text-grey-400"}>/ person</span>
       </div>
-      <div className={"font-preset-1 text-green-400"}>${amount}</div>
+      <div className={"font-preset-1 text-green-400"}>
+        ${(Math.round(amount * 100) / 100).toFixed(2)}
+      </div>
     </div>
   );
 }

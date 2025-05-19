@@ -23,12 +23,12 @@ export type CalculatorActions = {
 export type CalculatorStore = CalculatorState & CalculatorActions;
 
 export const defaultInitState: CalculatorState = {
-  billAmount: "142.55",
-  tipPercentage: 15,
-  numberOfPeople: "5",
+  billAmount: "0",
+  tipPercentage: null,
+  numberOfPeople: "0",
   results: {
-    tipPerPerson: 4.27,
-    totalPerPerson: 32.79,
+    tipPerPerson: 0,
+    totalPerPerson: 0,
   },
 };
 
@@ -94,19 +94,11 @@ function calculateResults(
   tipPercentage: number
 ): SplitResults {
   const totalTip = billAmount * tipPercentage * 0.01;
-  const tipPerPerson = roundToDecimalPlaces(totalTip / numberOfPeople, 2);
-  const totalPerPerson = roundToDecimalPlaces(
-    billAmount / numberOfPeople + tipPerPerson,
-    2
-  );
+  const tipPerPerson = totalTip / numberOfPeople;
+  const totalPerPerson = billAmount / numberOfPeople + tipPerPerson;
 
   return {
     tipPerPerson,
     totalPerPerson,
   };
-}
-
-function roundToDecimalPlaces(number: number, decimalPlaces: number) {
-  const factor = Math.pow(10, decimalPlaces);
-  return Math.round(number * factor) / factor;
 }
