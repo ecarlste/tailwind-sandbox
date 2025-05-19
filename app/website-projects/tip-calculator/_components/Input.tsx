@@ -4,8 +4,8 @@ import Label from "./Label";
 type InputProps = {
   children?: React.ReactNode;
   label: string;
-  value?: string;
-  onChange?: (event: React.FormEvent<HTMLInputElement>) => void;
+  value: string;
+  onChange: (event: React.FormEvent<HTMLInputElement>) => void;
 };
 
 export default function Input({
