@@ -11,15 +11,11 @@ export default function BillSection() {
     useCalculatorStore((state) => state);
 
   const handleBillAmountChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const parsedValue = parseInt(e.currentTarget.value);
-
-    setBillAmount(!isNaN(parsedValue) ? parsedValue : 0);
+    setBillAmount(e.currentTarget.value);
   };
 
   const handleNumberOfPeopleChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const parsedValue = parseInt(e.currentTarget.value);
-
-    setNumberOfPeople(!isNaN(parsedValue) ? parsedValue : 0);
+    setNumberOfPeople(e.currentTarget.value);
   };
 
   return (

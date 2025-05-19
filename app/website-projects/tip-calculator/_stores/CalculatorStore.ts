@@ -1,5 +1,6 @@
 import { createStore } from "zustand/vanilla";
 import { TipSelectionAmount } from "@/app/website-projects/tip-calculator/_types/TipSelectionAmount";
+import { number } from "zod";
 
 export type SplitResults = {
   tipPerPerson: number;
@@ -7,24 +8,24 @@ export type SplitResults = {
 };
 
 export type CalculatorState = {
-  billAmount: number;
+  billAmount: string;
   tipPercentage: TipSelectionAmount;
-  numberOfPeople: number;
+  numberOfPeople: string;
   results: SplitResults;
 };
 
 export type CalculatorActions = {
-  setBillAmount: (billAmount: number) => void;
+  setBillAmount: (billAmount: string) => void;
   setTipPercentage: (tipPercentage: TipSelectionAmount) => void;
-  setNumberOfPeople: (numberOfPeople: number) => void;
+  setNumberOfPeople: (numberOfPeople: string) => void;
 };
 
 export type CalculatorStore = CalculatorState & CalculatorActions;
 
 export const defaultInitState: CalculatorState = {
-  billAmount: 142.55,
+  billAmount: "142.55",
   tipPercentage: 15,
-  numberOfPeople: 5,
+  numberOfPeople: "5",
   results: {
     tipPerPerson: 4.27,
     totalPerPerson: 32.79,
@@ -36,33 +37,72 @@ export const initCalculatorStore = (): CalculatorState => {
 };
 
 export const createCalculatorStore = (
-  initState: CalculatorState = defaultInitState,
+  initState: CalculatorState = defaultInitState
 ) => {
   return createStore<CalculatorStore>()((set) => ({
     ...initState,
     setBillAmount: (billAmount) =>
-      set(() => {
-        console.log(`billAmount: ${billAmount}`);
+      set((state) => {
+        const results = calculateResults(
+          +billAmount,
+          +state.numberOfPeople,
+          state.tipPercentage || 0
+        );
 
         return {
           billAmount,
+          results,
         };
       }),
     setTipPercentage: (tipPercentage) =>
-      set(() => {
+      set((state) => {
+        const results = calculateResults(
+          +state.billAmount,
+          +state.numberOfPeople,
+          tipPercentage || 0
+        );
         console.log(`tipPercentage: ${tipPercentage}`);
 
         return {
           tipPercentage,
+          results,
         };
       }),
     setNumberOfPeople: (numberOfPeople) =>
-      set(() => {
-        console.log(`numberOfPeople: ${numberOfPeople}`);
+      set((state) => {
+        const results = calculateResults(
+          +state.billAmount,
+          +numberOfPeople,
+          state.tipPercentage || 0
+        );
 
         return {
           numberOfPeople,
+          results,
         };
       }),
   }));
 };
+
+function calculateResults(
+  billAmount: number,
+  numberOfPeople: number,
+  tipPercentage: number
+): SplitResults {
+  const totalTip = billAmount * tipPercentage * 0.01;
+  const tipPerPerson = roundToDecimalPlaces(totalTip / numberOfPeople, 2);
+  const totalPerPerson = roundToDecimalPlaces(
+    billAmount / numberOfPeople + tipPerPerson,
+    2
+  );
+
+  return {
+    tipPerPerson,
+    totalPerPerson,
+  };
+}
+
+function roundToDecimalPlaces(number: number, decimalPlaces: number) {
+  const factor = Math.pow(10, decimalPlaces);
+  return Math.round(number * factor) / factor;
+}
